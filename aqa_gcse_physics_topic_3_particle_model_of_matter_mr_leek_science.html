@@ -1,0 +1,3147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AQA GCSE Physics — Topic 3: Particle Model of Matter | Mr Leek Science</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    /* ==========================================================================
+       MR LEEK SCIENCE — ROYAL / SAPPHIRE BLUE DESIGN TOKENS (PHYSICS TOPIC 3)
+       ========================================================================== */
+    :root {
+      --navy-950: #09152b;
+      --navy-900: #0f172a;
+      --blue-900: #1e3a8a;
+      --blue-800: #1e40af;
+      --blue-700: #1d4ed8;
+      --blue-600: #2563eb;
+      --blue-500: #3b82f6;
+      --blue-400: #60a5fa;
+
+      --blue-200: #bfdbfe;
+      --blue-100: #dbeafe;
+      --blue-50: #eff6ff;
+      --blue-tint: #f8fbff;
+
+      --bg-page: #f8fafc;
+      --slate-900: #0f172a;
+      --slate-800: #1e293b;
+      --slate-700: #334155;
+      --slate-600: #475569;
+      --slate-500: #64748b;
+      --slate-400: #94a3b8;
+      --slate-300: #cbd5e1;
+      --slate-200: #e2e8f0;
+      --slate-100: #f1f5f9;
+      --slate-50: #f8fafc;
+
+      --sky-100: #e0f2fe;
+      --sky-700: #0369a1;
+      --green-chip-bg: #dcfce7;
+      --green-chip-fg: #15803d;
+      --purple-100: #f3e8ff;
+      --purple-700: #7e22ce;
+
+      --emerald-700: #047857;
+      --emerald-600: #059669;
+      --emerald-100: #d1fae5;
+      --emerald-50: #ecfdf5;
+
+      --amber-700: #b45309;
+      --amber-600: #d97706;
+      --amber-100: #fef3c7;
+      --amber-50: #fffbeb;
+
+      --rose-700: #be123c;
+      --rose-600: #dc2626;
+      --rose-500: #ef4444;
+      --rose-200: #fecaca;
+      --rose-100: #fee2e2;
+      --rose-50: #fef2f2;
+
+      --shadow-shell: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --shadow-cta: 0 6px 18px -2px rgba(29, 78, 216, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--slate-900);
+      min-height: 100vh;
+      padding: 1.5rem 1rem 3rem;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, .heading-font {
+      font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    /* ==========================================================================
+       CENTERED MAIN CARD CONTAINER
+       ========================================================================== */
+    .app-container {
+      max-width: 920px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid var(--slate-200);
+      box-shadow: var(--shadow-shell);
+      overflow: hidden;
+    }
+
+    /* ==========================================================================
+       TOP ROYAL / SAPPHIRE BLUE BANNER HEADER
+       ========================================================================== */
+    .banner-header {
+      background: linear-gradient(135deg, #09152b 0%, #1e3a8a 100%);
+      padding: 32px 36px;
+      color: #ffffff;
+      position: relative;
+    }
+
+    .banner-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .spec-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 999px;
+      padding: 5px 14px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--blue-200);
+    }
+
+    .brand-tag {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.92);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .banner-title {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.22;
+      letter-spacing: -0.015em;
+      margin-bottom: 8px;
+    }
+
+    .banner-subtitle {
+      font-size: 0.94rem;
+      color: rgba(255, 255, 255, 0.88);
+      max-width: 800px;
+      line-height: 1.52;
+      font-weight: 400;
+    }
+
+    /* ==========================================================================
+       WHITE FORM BODY
+       ========================================================================== */
+    .card-body {
+      padding: 28px 36px 36px;
+    }
+
+    .section-block {
+      margin-bottom: 26px;
+    }
+
+    /* Row 1: Student Name & Email Address */
+    .input-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .field-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .field-label {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--slate-800);
+      margin-bottom: 8px;
+    }
+
+    .field-label .req-star {
+      color: var(--blue-700);
+      margin-left: 2px;
+    }
+
+    .field-label .opt-muted {
+      color: var(--slate-400);
+      font-weight: 500;
+      margin-left: 3px;
+    }
+
+    .text-input {
+      width: 100%;
+      padding: 12px 15px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: var(--slate-900);
+      background: #ffffff;
+      border: 1.5px solid var(--slate-300);
+      border-radius: 12px;
+      transition: border-color 0.16s ease, box-shadow 0.16s ease;
+    }
+
+    .text-input::placeholder {
+      color: var(--slate-400);
+    }
+
+    .text-input:focus {
+      outline: none;
+      border-color: var(--blue-500);
+      box-shadow: 0 0 0 3.5px rgba(59, 130, 246, 0.2);
+    }
+
+    .text-input.input-error {
+      border-color: var(--rose-500);
+      background-color: var(--rose-50);
+      box-shadow: 0 0 0 3.5px rgba(239, 68, 68, 0.16);
+      animation: shakeInput 0.34s ease;
+    }
+
+    .error-hint {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--rose-600);
+      margin-top: 5px;
+    }
+
+    @keyframes shakeInput {
+      0%, 100% { transform: translateX(0); }
+      20% { transform: translateX(-6px); }
+      40% { transform: translateX(6px); }
+      60% { transform: translateX(-4px); }
+      80% { transform: translateX(4px); }
+    }
+
+    /* Section Header Bar */
+    .section-header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .section-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--slate-900);
+    }
+
+    .selected-tier-pill {
+      background: var(--blue-50);
+      border: 1px solid var(--blue-200);
+      color: var(--blue-800);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    .avail-count-text {
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: var(--slate-500);
+    }
+
+    /* Row 2: 3-Column Tier Selection Grid */
+    .tier-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .tier-card {
+      background: #ffffff;
+      border: 2px solid var(--slate-200);
+      border-radius: 16px;
+      padding: 18px 18px 20px;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.18s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .tier-card:hover {
+      border-color: var(--slate-300);
+      background: #fcfcfd;
+    }
+
+    .tier-card.selected {
+      border-color: var(--blue-700);
+      background: var(--blue-50);
+      box-shadow: 0 4px 14px rgba(29, 78, 216, 0.11);
+    }
+
+    .tier-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .spec-chip {
+      font-size: 0.69rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+
+    .chip-blue {
+      background: var(--sky-100);
+      color: var(--sky-700);
+    }
+
+    .chip-green {
+      background: var(--green-chip-bg);
+      color: var(--green-chip-fg);
+    }
+
+    .chip-purple {
+      background: var(--purple-100);
+      color: var(--purple-700);
+    }
+
+    .radio-circle {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 2px solid var(--slate-300);
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.16s ease;
+      flex-shrink: 0;
+    }
+
+    .radio-circle svg {
+      width: 13px;
+      height: 13px;
+      stroke: var(--slate-300);
+      stroke-width: 2.8;
+      fill: none;
+    }
+
+    .tier-card.selected .radio-circle {
+      background: var(--blue-700);
+      border-color: var(--blue-700);
+    }
+
+    .tier-card.selected .radio-circle svg {
+      stroke: #ffffff;
+    }
+
+    .tier-card-title {
+      font-size: 1.08rem;
+      font-weight: 800;
+      color: var(--slate-900);
+      margin-bottom: 8px;
+    }
+
+    .tier-card-desc {
+      font-size: 0.83rem;
+      color: var(--slate-600);
+      line-height: 1.52;
+    }
+
+    /* Row 3: 2-Column Quiz Focus Grid */
+    .focus-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .focus-card {
+      background: #ffffff;
+      border: 2px solid var(--slate-200);
+      border-radius: 16px;
+      padding: 16px 18px;
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      text-align: left;
+      transition: all 0.18s ease;
+    }
+
+    .focus-card:hover {
+      border-color: var(--slate-300);
+      background: #fcfcfd;
+    }
+
+    .focus-card.selected {
+      border-color: var(--blue-700);
+      background: var(--blue-50);
+      box-shadow: 0 4px 14px rgba(29, 78, 216, 0.11);
+    }
+
+    .focus-icon-box {
+      width: 42px;
+      height: 42px;
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+      transition: all 0.18s ease;
+    }
+
+    .focus-icon-blue {
+      background: var(--blue-700);
+      color: #ffffff;
+    }
+
+    .focus-icon-amber {
+      background: var(--amber-100);
+      color: var(--amber-700);
+    }
+
+    .focus-card.selected .focus-icon-amber {
+      background: var(--blue-700);
+      color: #ffffff;
+    }
+
+    .focus-content {
+      flex: 1;
+    }
+
+    .focus-title {
+      font-size: 0.98rem;
+      font-weight: 800;
+      color: var(--slate-900);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .focus-check {
+      color: var(--blue-700);
+      font-weight: 800;
+      font-size: 0.95rem;
+    }
+
+    .focus-desc {
+      font-size: 0.82rem;
+      color: var(--slate-600);
+      line-height: 1.48;
+    }
+
+    /* Row 4: Number of Questions 5-Column Grid */
+    .count-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+    }
+
+    .count-btn {
+      background: #ffffff;
+      border: 1.5px solid var(--slate-200);
+      border-radius: 12px;
+      padding: 13px 10px;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--slate-800);
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .count-btn:hover:not(.active) {
+      border-color: var(--slate-300);
+      background: var(--slate-50);
+    }
+
+    .count-btn.active {
+      background: var(--blue-700);
+      border-color: var(--blue-700);
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(29, 78, 216, 0.28);
+    }
+
+    .cap-notice {
+      margin-top: 9px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--amber-700);
+      background: var(--amber-50);
+      border: 1px solid #fde68a;
+      border-radius: 10px;
+      padding: 7px 12px;
+    }
+
+    /* Divider + Bottom Full-Width CTA */
+    .cta-divider {
+      border: none;
+      border-top: 1px solid var(--slate-200);
+      margin: 26px 0 22px;
+    }
+
+    .btn-start-cta {
+      width: 100%;
+      background: var(--blue-700);
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      padding: 16px 24px;
+      font-family: inherit;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: var(--shadow-cta);
+      transition: background 0.18s ease, transform 0.15s ease;
+    }
+
+    .btn-start-cta:hover {
+      background: var(--blue-600);
+      transform: translateY(-1px);
+    }
+
+    /* ==========================================================================
+       SCREEN 2: ACTIVE QUIZ INTERFACE
+       ========================================================================== */
+    .quiz-hud {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .hud-badges {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .hud-pill-brand {
+      background: var(--navy-950);
+      color: #ffffff;
+      font-size: 0.74rem;
+      font-weight: 800;
+      padding: 5px 12px;
+      border-radius: 999px;
+      letter-spacing: 0.02em;
+    }
+
+    .hud-pill-dark {
+      background: var(--blue-900);
+      color: #ffffff;
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 999px;
+    }
+
+    .hud-pill-blue {
+      background: var(--blue-50);
+      color: var(--blue-800);
+      border: 1px solid var(--blue-200);
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 999px;
+    }
+
+    .hud-pill-amber {
+      background: var(--amber-100);
+      color: var(--amber-700);
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 5px 12px;
+      border-radius: 999px;
+    }
+
+    .hud-stats {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .hud-score-badge {
+      background: var(--emerald-50);
+      color: var(--emerald-700);
+      border: 1px solid #a7f3d0;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 4px 11px;
+      border-radius: 999px;
+    }
+
+    .hud-q-counter {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--slate-700);
+    }
+
+    .hud-change-btn {
+      background: #ffffff;
+      color: var(--slate-700);
+      border: 1.5px solid var(--slate-300);
+      border-radius: 999px;
+      padding: 4px 12px;
+      font-family: inherit;
+      font-size: 0.76rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .hud-change-btn:hover {
+      border-color: var(--blue-700);
+      color: var(--blue-700);
+      background: var(--blue-50);
+    }
+
+    .progress-track {
+      width: 100%;
+      height: 8px;
+      background: var(--slate-100);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 22px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--blue-800), var(--blue-500));
+      border-radius: 999px;
+      transition: width 0.3s ease;
+    }
+
+    .question-box {
+      background: var(--blue-50);
+      border: 1.5px solid var(--blue-200);
+      border-radius: 16px;
+      padding: 20px 22px;
+      margin-bottom: 18px;
+    }
+
+    .q-meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .q-kicker {
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--blue-800);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .rp-badge {
+      background: var(--amber-100);
+      color: var(--amber-700);
+      border: 1px solid #fcd34d;
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 999px;
+      letter-spacing: 0.04em;
+    }
+
+    .kbd-tip {
+      font-size: 0.73rem;
+      color: var(--slate-500);
+      font-weight: 500;
+    }
+
+    .q-stem {
+      font-size: clamp(1.05rem, 2.1vw, 1.2rem);
+      font-weight: 700;
+      color: var(--slate-900);
+      line-height: 1.52;
+    }
+
+    .q-formula-box {
+      margin-top: 12px;
+      background: #ffffff;
+      border: 1px solid var(--blue-200);
+      border-left: 4px solid var(--blue-700);
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-family: "Plus Jakarta Sans", "Inter", monospace;
+      font-size: 0.94rem;
+      font-weight: 700;
+      color: var(--blue-900);
+      line-height: 1.55;
+      overflow-x: auto;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 6px;
+      font-family: "Inter", sans-serif;
+      font-size: 0.84rem;
+    }
+
+    .data-table th, .data-table td {
+      border: 1px solid var(--blue-200);
+      padding: 6px 10px;
+      text-align: center;
+    }
+
+    .data-table th {
+      background: var(--blue-50);
+      color: var(--blue-900);
+      font-weight: 700;
+    }
+
+    .data-table td {
+      background: #ffffff;
+      color: var(--slate-800);
+      font-weight: 600;
+    }
+
+    .options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      margin-bottom: 18px;
+    }
+
+    .opt-btn {
+      width: 100%;
+      text-align: left;
+      background: #ffffff;
+      border: 2px solid var(--slate-200);
+      border-radius: 14px;
+      padding: 14px 16px;
+      font-family: inherit;
+      font-size: 0.96rem;
+      font-weight: 500;
+      color: var(--slate-800);
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+      transition: all 0.15s ease;
+    }
+
+    .opt-btn:hover:not(:disabled) {
+      border-color: var(--blue-600);
+      background: var(--blue-50);
+    }
+
+    .opt-btn:disabled {
+      cursor: default;
+    }
+
+    .opt-letter {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: var(--slate-100);
+      color: var(--slate-700);
+      font-size: 0.82rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .opt-btn.correct {
+      border-color: var(--emerald-600);
+      background: var(--emerald-50);
+      color: var(--slate-900);
+    }
+
+    .opt-btn.correct .opt-letter {
+      background: var(--emerald-600);
+      color: #ffffff;
+    }
+
+    .opt-btn.incorrect {
+      border-color: var(--rose-600);
+      background: var(--rose-50);
+      color: var(--rose-700);
+    }
+
+    .opt-btn.incorrect .opt-letter {
+      background: var(--rose-600);
+      color: #ffffff;
+    }
+
+    .opt-btn.dimmed {
+      opacity: 0.55;
+    }
+
+    .feedback-panel {
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin-bottom: 18px;
+      animation: fadeSlide 0.22s ease;
+    }
+
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .feedback-panel.fb-pass {
+      background: var(--emerald-50);
+      border: 1px solid #a7f3d0;
+      border-left: 5px solid var(--emerald-600);
+    }
+
+    .feedback-panel.fb-fail {
+      background: var(--rose-50);
+      border: 1px solid var(--rose-200);
+      border-left: 5px solid var(--rose-600);
+    }
+
+    .fb-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .fb-status {
+      font-weight: 800;
+      font-size: 0.98rem;
+    }
+
+    .fb-pass .fb-status { color: var(--emerald-700); }
+    .fb-fail .fb-status { color: var(--rose-600); }
+
+    .fb-chip {
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--slate-700);
+      border: 1px solid var(--slate-200);
+    }
+
+    .fb-text {
+      font-size: 0.91rem;
+      color: var(--slate-800);
+      line-height: 1.56;
+    }
+
+    .quiz-bottom-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding-top: 14px;
+      border-top: 1px solid var(--slate-200);
+    }
+
+    .btn-secondary {
+      background: #ffffff;
+      color: var(--slate-700);
+      border: 1.5px solid var(--slate-300);
+      border-radius: 12px;
+      padding: 11px 18px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.16s ease;
+    }
+
+    .btn-secondary:hover {
+      background: var(--slate-50);
+      border-color: var(--slate-400);
+    }
+
+    .btn-primary-sm {
+      background: var(--blue-700);
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 22px;
+      font-family: inherit;
+      font-size: 0.94rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(29, 78, 216, 0.25);
+      transition: background 0.16s ease;
+    }
+
+    .btn-primary-sm:hover {
+      background: var(--blue-600);
+    }
+
+    /* ==========================================================================
+       SCREEN 3: DIAGNOSTIC RESULTS DASHBOARD
+       ========================================================================== */
+    .report-hero-box {
+      background: var(--blue-50);
+      border: 1.5px solid var(--blue-200);
+      border-radius: 16px;
+      padding: 24px 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .report-student-line {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--blue-800);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+    }
+
+    .report-score-row {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .report-pct {
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: clamp(2.5rem, 5vw, 3.3rem);
+      font-weight: 800;
+      color: var(--blue-700);
+      line-height: 1;
+    }
+
+    .report-fraction {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--slate-600);
+    }
+
+    .grade-pill {
+      display: inline-block;
+      background: var(--blue-900);
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+
+    .report-summary-msg {
+      font-size: 0.93rem;
+      color: var(--slate-700);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .report-btn-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 26px;
+    }
+
+    .mastery-section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1.5px solid var(--slate-200);
+    }
+
+    .mastery-section-head h3 {
+      font-size: 1.05rem;
+      color: var(--slate-900);
+    }
+
+    .legend-row {
+      display: flex;
+      gap: 8px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      flex-wrap: wrap;
+    }
+
+    .tag-g { background: var(--emerald-50); color: var(--emerald-700); padding: 3px 9px; border-radius: 999px; }
+    .tag-a { background: var(--amber-50); color: var(--amber-700); padding: 3px 9px; border-radius: 999px; }
+    .tag-r { background: var(--rose-50); color: var(--rose-600); padding: 3px 9px; border-radius: 999px; }
+
+    .mastery-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .mastery-item {
+      border: 1.5px solid var(--slate-200);
+      border-radius: 14px;
+      padding: 14px 16px;
+      background: #ffffff;
+    }
+
+    .mastery-item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+
+    .mastery-name {
+      font-weight: 700;
+      font-size: 0.94rem;
+      color: var(--slate-900);
+    }
+
+    .mastery-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-chip {
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 999px;
+    }
+
+    .sc-strong { background: var(--emerald-100); color: var(--emerald-700); }
+    .sc-dev { background: var(--amber-100); color: var(--amber-700); }
+    .sc-weak { background: var(--rose-100); color: var(--rose-600); }
+
+    .mastery-bar-track {
+      width: 100%;
+      height: 8px;
+      background: var(--slate-100);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 7px;
+    }
+
+    .mastery-bar-fill {
+      height: 100%;
+      border-radius: 999px;
+    }
+
+    .fill-g { background: var(--emerald-600); }
+    .fill-a { background: var(--amber-600); }
+    .fill-r { background: var(--rose-600); }
+
+    .mastery-tip {
+      font-size: 0.82rem;
+      color: var(--slate-600);
+      line-height: 1.5;
+    }
+
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .review-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .review-card {
+      border: 1.5px solid var(--slate-200);
+      border-left: 5px solid var(--slate-400);
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+
+    .review-card.rc-ok { border-left-color: var(--emerald-600); }
+    .review-card.rc-bad { border-left-color: var(--rose-600); }
+
+    .rc-kicker {
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--blue-800);
+      margin-bottom: 4px;
+    }
+
+    .rc-q {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--slate-900);
+      margin-bottom: 6px;
+    }
+
+    .rc-ans {
+      font-size: 0.86rem;
+      margin-bottom: 3px;
+    }
+
+    .rc-exp {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px dashed var(--slate-200);
+      font-size: 0.84rem;
+      color: var(--slate-700);
+      line-height: 1.52;
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--slate-400);
+      margin-top: 1.5rem;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    @media (max-width: 820px) {
+      .tier-grid {
+        grid-template-columns: 1fr;
+      }
+      .focus-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 0.75rem 0.65rem 2rem;
+      }
+      .banner-header {
+        padding: 24px 20px;
+      }
+      .card-body {
+        padding: 20px 18px 26px;
+      }
+      .input-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      .count-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .kbd-tip {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- ======================================================================
+         ROYAL / SAPPHIRE BLUE HEADER BANNER
+         ====================================================================== -->
+    <header class="banner-header">
+      <div class="banner-top-row">
+        <span class="spec-pill">TOPIC 3 &bull; PAPER 1 REVISION (8463 &amp; 8464)</span>
+        <span class="brand-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#bfdbfe" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="8" cy="8" r="2.5"></circle>
+            <circle cx="16" cy="7" r="2.5"></circle>
+            <circle cx="12" cy="14" r="2.5"></circle>
+            <circle cx="6" cy="18" r="2.5"></circle>
+            <circle cx="18" cy="17" r="2.5"></circle>
+          </svg>
+          Mr Leek Science
+        </span>
+      </div>
+      <h1 id="banner-main-title" class="banner-title">Configure Your Particle Model of Matter Quiz</h1>
+      <p id="banner-main-sub" class="banner-subtitle">Enter your name, choose your tier, select either all Topic 3 content or Required Practical 5 &amp; Calculations only, and pick your question count.</p>
+    </header>
+
+    <!-- ======================================================================
+         VIEW 1: CONFIGURATION SCREEN
+         ====================================================================== -->
+    <main id="view-config" class="card-body">
+      <!-- Row 1: Student Name & Email Address -->
+      <div class="section-block input-grid">
+        <div class="field-group">
+          <label for="student-name" class="field-label">Student Name <span class="req-star">*</span></label>
+          <input type="text" id="student-name" class="text-input" placeholder="Enter your full name" autocomplete="name" />
+          <span id="name-error-msg" class="error-hint hidden">Please enter your name before starting the quiz.</span>
+        </div>
+
+        <div class="field-group">
+          <label for="student-email" class="field-label">Email Address <span class="opt-muted">(Optional)</span></label>
+          <input type="email" id="student-email" class="text-input" placeholder="e.g. student@school.co.uk" autocomplete="email" />
+        </div>
+      </div>
+
+      <!-- Row 2: Select Tier / Pathway -->
+      <div class="section-block">
+        <div class="section-header-bar">
+          <span class="section-title">Select Tier / Pathway</span>
+          <span id="selected-tier-badge" class="selected-tier-pill">Higher Tier Selected</span>
+        </div>
+
+        <div class="tier-grid" role="radiogroup" aria-label="Select Tier or Pathway">
+          <!-- Foundation Tier -->
+          <div class="tier-card" id="tier-card-foundation" role="radio" aria-checked="false" tabindex="0" onclick="selectTier('foundation')" onkeydown="if(event.key==='Enter'||event.key===' ')selectTier('foundation')">
+            <div class="tier-card-top">
+              <span class="spec-chip chip-blue">COMBINED 8464</span>
+              <span class="radio-circle" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+            </div>
+            <div class="tier-card-title">Foundation Tier</div>
+            <p class="tier-card-desc">Density, states of matter, changes of state, internal energy, specific heat capacity, specific latent heat, and gas pressure &amp; temperature (Grades 1–5).</p>
+          </div>
+
+          <!-- Higher Tier (Default Selected) -->
+          <div class="tier-card selected" id="tier-card-higher" role="radio" aria-checked="true" tabindex="0" onclick="selectTier('higher')" onkeydown="if(event.key==='Enter'||event.key===' ')selectTier('higher')">
+            <div class="tier-card-top">
+              <span class="spec-chip chip-green">COMBINED 8464</span>
+              <span class="radio-circle" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+            </div>
+            <div class="tier-card-title">Higher Tier</div>
+            <p class="tier-card-desc">Includes multi-step latent heat &amp; heating curve calculations, kinetic theory explanations of gas pressure, and unit conversions (Grades 4–9).</p>
+          </div>
+
+          <!-- Separate Physics -->
+          <div class="tier-card" id="tier-card-separate" role="radio" aria-checked="false" tabindex="0" onclick="selectTier('separate')" onkeydown="if(event.key==='Enter'||event.key===' ')selectTier('separate')">
+            <div class="tier-card-top">
+              <span class="spec-chip chip-purple">TRIPLE 8463</span>
+              <span class="radio-circle" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+            </div>
+            <div class="tier-card-title">Separate Physics</div>
+            <p class="tier-card-desc">Full 8463 content including Boyle's Law (pV = constant), pressure-volume calculations, and work done by compressing a gas increasing internal energy &amp; temperature (Grades 1–9).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3: Quiz Focus -->
+      <div class="section-block">
+        <div class="section-header-bar">
+          <span class="section-title">Quiz Focus</span>
+        </div>
+
+        <div class="focus-grid" role="radiogroup" aria-label="Quiz Focus">
+          <!-- Option 1: All Topics -->
+          <div class="focus-card selected" id="focus-card-all" role="radio" aria-checked="true" tabindex="0" onclick="selectFocus('all')" onkeydown="if(event.key==='Enter'||event.key===' ')selectFocus('all')">
+            <div class="focus-icon-box focus-icon-blue" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <div class="focus-content">
+              <div class="focus-title">
+                <span>All Particle Model Topics</span>
+                <span id="focus-check-all" class="focus-check">&#10003;</span>
+              </div>
+              <p class="focus-desc">Covers density, states &amp; changes of state, internal energy, specific heat capacity, specific latent heat, and gas pressure &amp; Boyle's law.</p>
+            </div>
+          </div>
+
+          <!-- Option 2: Required Practical 5 & Calculations Only -->
+          <div class="focus-card" id="focus-card-practicals" role="radio" aria-checked="false" tabindex="0" onclick="selectFocus('practicals')" onkeydown="if(event.key==='Enter'||event.key===' ')selectFocus('practicals')">
+            <div class="focus-icon-box focus-icon-amber" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 3h6"></path>
+                <path d="M10 3v5.5L4.5 18A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-3L14 8.5V3"></path>
+                <path d="M7 15h10"></path>
+              </svg>
+            </div>
+            <div class="focus-content">
+              <div class="focus-title">
+                <span>Required Practical 5 &amp; Calculations Only</span>
+                <span id="focus-check-practicals" class="focus-check hidden">&#10003;</span>
+              </div>
+              <p class="focus-desc">Focused drill: RP5 / RP17 Density of regular/irregular solids &amp; liquids + density, specific heat capacity, latent heat &amp; gas law equations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 4: Number of Questions 5-Column Grid -->
+      <div class="section-block" style="margin-bottom: 0;">
+        <div class="section-header-bar">
+          <span class="section-title">Number of Questions</span>
+          <span id="available-q-label" class="avail-count-text">64 unique questions available for Higher Tier</span>
+        </div>
+
+        <div class="count-grid" role="radiogroup" aria-label="Number of Questions">
+          <button type="button" class="count-btn" data-count="10" onclick="selectCount(10)">10</button>
+          <button type="button" class="count-btn active" data-count="20" onclick="selectCount(20)">20</button>
+          <button type="button" class="count-btn" data-count="30" onclick="selectCount(30)">30</button>
+          <button type="button" class="count-btn" data-count="50" onclick="selectCount(50)">50</button>
+          <button type="button" class="count-btn" data-count="80" onclick="selectCount(80)">80</button>
+        </div>
+
+        <div id="cap-feedback-banner" class="cap-notice hidden"></div>
+      </div>
+
+      <hr class="cta-divider" />
+
+      <button type="button" id="btn-start-quiz" class="btn-start-cta" onclick="launchConfiguredQuiz()">
+        Start Higher Tier Quiz (20 Questions) &rarr;
+      </button>
+    </main>
+
+    <!-- ======================================================================
+         VIEW 2: ACTIVE QUIZ RUNNER
+         ====================================================================== -->
+    <section id="view-quiz" class="card-body hidden" aria-live="polite">
+      <div class="quiz-hud">
+        <div class="hud-badges">
+          <span class="hud-pill-brand">Mr Leek Science</span>
+          <span id="hud-student-pill" class="hud-pill-dark">Student</span>
+          <span id="hud-tier-pill" class="hud-pill-blue">Higher Tier</span>
+          <span id="hud-focus-pill" class="hud-pill-blue">All Particle Model Topics</span>
+          <span id="hud-retry-pill" class="hud-pill-amber hidden">Retry Missed Mode</span>
+        </div>
+
+        <div class="hud-stats">
+          <span id="hud-live-score" class="hud-score-badge">Score: 0 / 0</span>
+          <span id="hud-counter" class="hud-q-counter">Question 1 of 20</span>
+          <button type="button" class="hud-change-btn" onclick="returnToConfig()">Change Settings</button>
+        </div>
+      </div>
+
+      <div class="progress-track">
+        <div id="quiz-progress-fill" class="progress-fill"></div>
+      </div>
+
+      <div class="question-box">
+        <div class="q-meta-row">
+          <span id="q-kicker-label" class="q-kicker">Question 1 &bull; Sub-topic</span>
+          <span class="kbd-tip">Shortcuts: 1–4 or A–D to answer &bull; Enter for Next</span>
+        </div>
+        <div id="q-stem-text" class="q-stem">Question stem</div>
+        <div id="q-formula-box" class="q-formula-box hidden"></div>
+      </div>
+
+      <div id="quiz-options-list" class="options-list"></div>
+
+      <div id="quiz-feedback-panel" class="feedback-panel hidden">
+        <div class="fb-top">
+          <span id="fb-status-text" class="fb-status"></span>
+          <span class="fb-chip">AQA Examiner Insight</span>
+        </div>
+        <div id="fb-insight-text" class="fb-text"></div>
+      </div>
+
+      <div class="quiz-bottom-actions">
+        <button type="button" class="btn-secondary" onclick="returnToConfig()">&larr; Change Settings</button>
+        <button type="button" id="btn-next-question" class="btn-primary-sm hidden" onclick="advanceQuestion()">Next Question &rarr;</button>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         VIEW 3: DIAGNOSTIC RESULTS DASHBOARD
+         ====================================================================== -->
+    <section id="view-report" class="card-body hidden">
+      <div class="report-hero-box">
+        <div id="rep-student-header" class="report-student-line">Diagnostic Report &bull; Student</div>
+        <div class="report-score-row">
+          <span id="rep-pct-val" class="report-pct">85%</span>
+          <span id="rep-frac-val" class="report-fraction">(17 / 20)</span>
+        </div>
+        <div id="rep-grade-pill" class="grade-pill">Estimated AQA Indicator: Grade 8–9</div>
+        <p id="rep-msg-text" class="report-summary-msg"></p>
+      </div>
+
+      <div class="report-btn-row">
+        <button type="button" id="btn-retry-missed" class="btn-primary-sm" onclick="startRetryMissed()">Retry Missed Questions (3)</button>
+        <button type="button" class="btn-secondary" onclick="launchConfiguredQuiz()">Retake Full Quiz</button>
+        <button type="button" class="btn-secondary" onclick="returnToConfig()">Back to Configuration</button>
+      </div>
+
+      <div class="mastery-section-head">
+        <h3>Sub-Topic Mastery Breakdown</h3>
+        <div class="legend-row">
+          <span class="tag-g">Strong Area (&ge;80%)</span>
+          <span class="tag-a">Developing (50–79%)</span>
+          <span class="tag-r">Priority Focus (&lt;50%)</span>
+        </div>
+      </div>
+
+      <div id="rep-mastery-grid" class="mastery-grid"></div>
+
+      <div class="review-header">
+        <h3 style="font-size: 1.05rem; color: var(--slate-900);">Full Question-by-Question Review</h3>
+        <button type="button" id="btn-toggle-review" class="btn-secondary" onclick="toggleReviewSection()">Show Full Question-by-Question Review</button>
+      </div>
+
+      <div id="rep-review-list" class="review-list hidden"></div>
+    </section>
+  </div>
+
+  <p class="footer-note">&copy; Mr Leek Science &bull; AQA GCSE Physics (8463 &amp; 8464) Topic 3 Particle Model of Matter Interactive Assessment</p>
+
+  <script>
+    /* ==========================================================================
+       AQA GCSE PHYSICS TOPIC 3 QUESTION BANK (74 UNIQUE QUESTIONS)
+       Subtopics:
+       1. Density & Required Practical 5 (18 Qs)
+       2. States of Matter & Changes of State (12 Qs)
+       3. Internal Energy & Specific Heat Capacity (12 Qs)
+       4. Specific Latent Heat & Heating/Cooling Curves (16 Qs)
+       5. Particle Motion in Gases & Gas Laws (16 Qs)
+       ========================================================================== */
+    const SUBTOPIC_GUIDANCE = {
+      "Density & Required Practical 5": "Remember &rho; = m &divide; V (density in kg/m<sup>3</sup> or g/cm<sup>3</sup>). To convert g/cm<sup>3</sup> to kg/m<sup>3</sup>, multiply by 1000 (e.g. 1.0 g/cm<sup>3</sup> = 1000 kg/m<sup>3</sup>). For Required Practical 5 (RP5 / RP17): measure mass on a zeroed digital balance BEFORE submerging an irregular object in water; calculate regular block volume via V = l &times; w &times; h; use a displacement (Eureka) can and measuring cylinder (read from the bottom of the meniscus at eye level) for irregular solids; and find liquid density by subtracting the mass of the empty measuring cylinder.",
+      "States of Matter & Changes of State": "Compare particle spacing, arrangement, and motion clearly: solids have tightly packed, regular rows vibrating about fixed positions; liquids have closely packed, irregularly arranged particles that slide past one another; gases have widely spaced particles moving rapidly in random directions. Changes of state (melting, freezing, boiling, evaporating, condensing, sublimating) are PHYSICAL changes—mass is conserved and recovering the original substance reverses the change. Know the limitations of the simple ball-and-stick particle model (assumes solid inelastic spheres with no forces shown).",
+      "Internal Energy & Specific Heat Capacity": "Internal energy is the TOTAL kinetic energy and potential energy of all the particles (atoms and molecules) that make up a system. Heating increases the energy stored within the system, either raising its temperature (increasing average kinetic energy of particles) or producing a change of state (increasing potential energy). Master &Delta;E = m &times; c &times; &Delta;&theta; (convert grams to kg and kJ to J before substituting!).",
+      "Specific Latent Heat & Heating/Cooling Curves": "Specific latent heat is the energy needed to change the state of 1 kg of a substance WITHOUT a change in temperature (E = m &times; L). On a heating/cooling curve, the flat horizontal plateaus represent changes of state: energy supplied increases the POTENTIAL ENERGY of the particles to overcome intermolecular forces, while average KINETIC ENERGY (and therefore temperature) stays constant. Specific latent heat of vaporisation is much larger than fusion because particles must be completely separated into a gas.",
+      "Particle Motion in Gases & Gas Laws": "Gas molecules move constantly in random directions with a range of speeds. Gas pressure is caused by particles colliding with the walls of the container, exerting a net outward force at right angles to the wall. Increasing temperature at constant volume increases average particle speed, causing more frequent and harder collisions with the walls (higher pressure). For Separate Physics (8463): p &times; V = constant at fixed temperature (inversely proportional), and rapidly compressing a gas (e.g. with a bicycle pump) does work on the gas, increasing its internal energy and temperature."
+    };
+
+    const QUESTION_POOL = [
+      // ========================================================================
+      // 1. DENSITY & REQUIRED PRACTICAL 5 (18 Questions)
+      // ========================================================================
+      {
+        id: "P3_Q01",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: true,
+        subtopic: "Density & Required Practical 5",
+        stem: "Which equation defines the DENSITY (&rho;) of a material, and what are its standard SI units?",
+        formulaBox: "Density equation &amp; SI units",
+        options: [
+          "&rho; = m / V (density = mass &divide; volume), measured in kilograms per metre cubed (kg/m<sup>3</sup>)",
+          "&rho; = V / m (density = volume &divide; mass), measured in metres cubed per kilogram (m<sup>3</sup>/kg)",
+          "&rho; = m &times; V (density = mass &times; volume), measured in kilogram metres cubed (kg m<sup>3</sup>)",
+          "&rho; = F / A (density = force &divide; area), measured in pascals (Pa)"
+        ],
+        correct: 0,
+        explanation: "AQA specification exact formula: &rho; = m / V, where mass m is in kg, volume V is in m<sup>3</sup>, and density &rho; is in kg/m<sup>3</sup> (or g/cm<sup>3</sup> in laboratory work)."
+      },
+      {
+        id: "P3_Q02",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: true,
+        subtopic: "Density & Required Practical 5",
+        stem: "A solid aluminium block has a mass of 540 g and dimensions 10.0 cm &times; 5.0 cm &times; 4.0 cm. Calculate the density of aluminium in g/cm<sup>3</sup>.",
+        formulaBox: "V = l &times; w &times; h  |  &rho; = m / V",
+        options: [
+          "2.7 g/cm<sup>3</sup>",
+          "27 g/cm<sup>3</sup>",
+          "0.37 g/cm<sup>3</sup>",
+          "108 g/cm<sup>3</sup>"
+        ],
+        correct: 0,
+        explanation: "Volume V = 10.0 &times; 5.0 &times; 4.0 = 200 cm<sup>3</sup>. Density &rho; = 540 &divide; 200 = 2.7 g/cm<sup>3</sup>."
+      },
+      {
+        id: "P3_Q03",
+        tiers: ["higher", "separate"],
+        isPractical: true,
+        subtopic: "Density & Required Practical 5",
+        stem: "Pure liquid water has a density of 1.0 g/cm<sup>3</sup>. Convert this density into standard SI units of kg/m<sup>3</sup>.",
+        formulaBox: "1 kg = 1000 g  |  1 m<sup>3</sup> = 1,000,000 cm<sup>3</sup>",
+        options: [
+          "1000 kg/m<sup>3</sup>",
+          "100 kg/m<sup>3</sup>",
+          "0.001 kg/m<sup>3</sup>",
+          "1,000,000 kg/m<sup>3</sup>"
+        ],
+        correct: 0,
+        explanation: "To convert from g/cm<sup>3</sup> to kg/m<sup>3</sup>, multiply by 1000: 1.0 g/cm<sup>3</sup> &times; 1000 = 1000 kg/m<sup>3</sup>."
+      },
+      {
+        id: "P3_Q04",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: true,
+        subtopic: "Density & Required Practical 5",
+        stem: "In Required Practical 5 (RP5 / RP17: Determining the density of an irregular-shaped solid such as a stone), why must the student measure the MASS of the stone BEFORE submerging it in water?",
+        formulaBox: "Required Practical 5 — Irregular Object Method",
+        options: [
+          "If weighed after submerging, water clinging to the stone's surface (or absorbed into pores) would artificially increase the measured mass, giving a density value that is too high",
+          "Because digital balances break if a damp object is placed on the pan",
+          "Because submerging a stone in water reduces its true gravitational mass",
+          "Because the displacement can only works if the stone is wet first"
+        ],
+        correct: 0,
+        explanation: "AQA RP5 mark scheme point: Always measure the dry mass first on a zeroed balance before placing the object in water."
+      },
+      {
+        id: "P3_Q05",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: true,
+        subtopic: "Density & Required Practical 5",
+        stem: "Describe the correct sequence of steps in Required Practical 5 to measure the VOLUME of a small irregular metal bolt using a displacement (Eureka) can and a measuring cylinder.",
+        formulaBox: "Required Practical 5 — Water Displacement",
+        options: [
+          "1. Fill the displacement can until water overflows from the spout, then wait until dripping stops; 2. Place an empty dry measuring cylinder under the spout; 3. Gently lower the bolt into the can until fully submerged; 4. Read the volume of displaced water collected in the cylinder from the bottom of the meniscus at eye level",
+          "1. Half-fill the displacement can below the spout; 2. Drop the bolt from 1 metre high so water splashes out; 3. Read the top of the meniscus while standing up",
+          "1. Fill the measuring cylinder to the brim; 2. Place the displacement can inside the cylinder",
+          "1. Measure the bolt's circumference with a ruler and multiply by its mass"
+        ],
+        correct: 0,
+        explanation: "Filling until water just stops dripping from the spout ensures the volume of displaced water equals the exact volume of the submerged object."
+      },
+      {
+        id: "P3_Q06",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: true,
+        subtopic: "Density & Required Practical 5",
+        stem: "A student measures the density of an irregular brass key. Its mass is 42.5 g. When lowered into a measuring cylinder containing 30.0 cm<sup>3</sup> of water, the water level rises to 35.0 cm<sup>3</sup>. Calculate the density of the brass key.",
+        formulaBox: "V<sub>object</sub> = V<sub>final</sub> &minus; V<sub>initial</sub>  |  &rho; = m / V",
+        options: [
+          "8.5 g/cm<sup>3</sup>",
+          "1.4 g/cm<sup>3</sup>",
+          "1.2 g/cm<sup>3</sup>",
+          "212.5 g/cm<sup>3</sup>"
+        ],
+        correct: 0,
+        explanation: "Volume of key V = 35.0 &minus; 30.0 = 5.0 cm<sup>3</sup>. Density &rho; = 42.5 &divide; 5.0 = 8.5 g/cm<sup>3</sup>."
+      },
+      {
+        id: "P3_Q07",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: true,
+        subtopic: "Density & Required Practical 5",
+        stem: "In Required Practical 5, how should a student accurately determine the DENSITY of a liquid (such as brine or cooking oil)?",
+        formulaBox: "Required Practical 5 — Density of a Liquid",
+        options: [
+          "1. Place an empty measuring cylinder on a balance and zero/tare it (or record m<sub>empty</sub>); 2. Pour a known volume V of the liquid into the cylinder; 3. Record the mass m of the liquid alone and calculate &rho; = m / V",
+          "1. Weigh the full measuring cylinder and divide that total mass by the liquid's volume without subtracting the cylinder's mass",
+          "1. Pour the liquid onto a flat balance pan and measure its puddle width",
+          "1. Freeze the liquid and measure its dimensions with a metre rule"
+        ],
+        correct: 0,
+        explanation: "Forgetting to subtract the mass of the empty measuring cylinder is a common RP5 error that makes the calculated liquid density far too high."
+      },
+      {
+        id: "P3_Q08",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: true,
+        subtopic: "Density & Required Practical 5",
+        stem: "Look at the student's Required Practical 5 measurements for an unknown liquid. Calculate the density of the liquid in g/cm<sup>3</sup>.",
+        formulaBox: "<table class='data-table'><tr><th>Mass of empty measuring cylinder</th><td>64.2 g</td></tr><tr><th>Mass of cylinder + liquid</th><td>110.2 g</td></tr><tr><th>Volume of liquid</th><td>40.0 cm<sup>3</sup></td></tr></table>",
+        options: [
+          "1.15 g/cm<sup>3</sup>",
+          "2.76 g/cm<sup>3</sup>",
+          "1.61 g/cm<sup>3</sup>",
+          "0.87 g/cm<sup>3</sup>"
+        ],
+        correct: 0,
+        explanation: "Mass of liquid alone = 110.2 &minus; 64.2 = 46.0 g. Density &rho; = 46.0 &divide; 40.0 = 1.15 g/cm<sup>3</sup>."
+      },
+      {
+        id: "P3_Q09",
+        tiers: ["higher", "separate"],
+        isPractical: true,
+        subtopic: "Density & Required Practical 5",
+        stem: "A solid gold statue has a mass of 3.86 kg. The density of pure gold is 19,300 kg/m<sup>3</sup>. Calculate the volume of the statue in m<sup>3</sup>.",
+        formulaBox: "V = m / &rho;",
+        options: [
+          "0.00020 m<sup>3</sup> (2.0 &times; 10<sup>&minus;4</sup> m<sup>3</sup>)",
+          "5000 m<sup>3</sup>",
+          "74,498 m<sup>3</sup>",
+          "0.0020 m<sup>3</sup>"
+        ],
+        correct: 0,
+        explanation: "V = m &divide; &rho; = 3.86 &divide; 19,300 = 0.00020 m<sup>3</sup> (2.0 &times; 10<sup>&minus;4</sup> m<sup>3</sup>, or 200 cm<sup>3</sup>)."
+      },
+      {
+        id: "P3_Q10",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: true,
+        subtopic: "Density & Required Practical 5",
+        stem: "A room measures 5.0 m long, 4.0 m wide, and 2.5 m high. If the density of air in the room is 1.2 kg/m<sup>3</sup>, calculate the mass of air inside the room.",
+        formulaBox: "m = &rho; &times; V",
+        options: [
+          "60 kg",
+          "41.7 kg",
+          "0.024 kg",
+          "13.8 kg"
+        ],
+        correct: 0,
+        explanation: "Volume of room V = 5.0 &times; 4.0 &times; 2.5 = 50 m<sup>3</sup>. Mass m = &rho; &times; V = 1.2 &times; 50 = 60 kg."
+      },
+      {
+        id: "P3_Q11",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Density & Required Practical 5",
+        stem: "Explain, in terms of the particle model, why solids and liquids have MUCH HIGHER densities than gases.",
+        formulaBox: "Particle packing &amp; Density",
+        options: [
+          "In solids and liquids, particles are packed closely together with very little empty space between them, so there is a much larger mass of particles per unit volume than in a gas (where particles are far apart)",
+          "Individual gas atoms weigh almost nothing compared to solid atoms of the same element",
+          "Gas particles are constantly disappearing into empty space",
+          "Solid particles are much larger in diameter than gas particles of the same substance"
+        ],
+        correct: 0,
+        explanation: "AQA specification exact reasoning: Differences in density between the different states of matter are explained in terms of the arrangements of atoms or molecules (particles per unit volume)."
+      },
+      {
+        id: "P3_Q12",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Density & Required Practical 5",
+        stem: "A block of oak wood has a density of 750 kg/m<sup>3</sup>, and pure water has a density of 1000 kg/m<sup>3</sup>. What happens when the oak block is placed in pure water, and why?",
+        formulaBox: "Floating vs. Sinking condition",
+        options: [
+          "The oak block FLOATS because its density (750 kg/m<sup>3</sup>) is less than the density of water (1000 kg/m<sup>3</sup>)",
+          "The oak block SINKS to the bottom because 750 is less than 1000",
+          "The oak block dissolves in the water",
+          "The oak block floats only if it has a mass less than 1 kg"
+        ],
+        correct: 0,
+        explanation: "An object floats in a fluid if its overall average density is less than the density of the fluid, and sinks if its density is greater."
+      },
+      {
+        id: "P3_Q13",
+        tiers: ["higher", "separate"],
+        isPractical: true,
+        subtopic: "Density & Required Practical 5",
+        stem: "Why does ice (solid water, density 917 kg/m<sup>3</sup>) float on liquid water (density 1000 kg/m<sup>3</sup>), unlike almost all other substances where the solid sinks in its liquid?",
+        formulaBox: "Anomalous expansion of water on freezing",
+        options: [
+          "When water freezes into ice, its molecules form an open hexagonal crystal lattice with slightly larger spaces between molecules, so the same mass occupies a larger volume (lower density)",
+          "Ice molecules lose mass when cooled below 0 &deg;C",
+          "Trapped air bubbles always make every piece of ice weigh 0 kg",
+          "Liquid water has no intermolecular forces"
+        ],
+        correct: 0,
+        explanation: "Because mass is conserved on freezing while volume expands by ~9%, &rho; = m/V decreases from 1000 kg/m<sup>3</sup> to 917 kg/m<sup>3</sup>."
+      },
+      {
+        id: "P3_Q14",
+        tiers: ["higher", "separate"],
+        isPractical: true,
+        subtopic: "Density & Required Practical 5",
+        stem: "In Required Practical 5, a student measures the thickness of a thin metal plate (around 1.85 mm) to calculate its volume. Which measuring instrument gives the highest resolution and lowest percentage uncertainty?",
+        formulaBox: "Selecting appropriate measuring instruments",
+        options: [
+          "A micrometer screw gauge (resolution 0.01 mm) or digital vernier calipers (resolution 0.01 mm)",
+          "A standard wooden metre rule (resolution 1 mm)",
+          "A 30 cm plastic school ruler (resolution 1 mm)",
+          "A measuring tape (resolution 5 mm)"
+        ],
+        correct: 0,
+        explanation: "Using a 1 mm resolution ruler on a 1.85 mm thickness creates a huge relative uncertainty (~54%), whereas a 0.01 mm micrometer gives ~0.5% uncertainty."
+      },
+      {
+        id: "P3_Q15",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: true,
+        subtopic: "Density & Required Practical 5",
+        stem: "If you cut a uniform bar of pure copper (density 8960 kg/m<sup>3</sup>) exactly in half, what is the density of each half?",
+        formulaBox: "Density is an intensive material property",
+        options: [
+          "8960 kg/m<sup>3</sup> (density stays the same because both mass and volume are halved)",
+          "4480 kg/m<sup>3</sup> (density is halved)",
+          "17,920 kg/m<sup>3</sup> (density is doubled)",
+          "0 kg/m<sup>3</sup>"
+        ],
+        correct: 0,
+        explanation: "Because &rho; = m / V, halving both m and V leaves their ratio unchanged—density depends on the material, not the size of the sample."
+      },
+      {
+        id: "P3_Q16",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: true,
+        subtopic: "Density & Required Practical 5",
+        stem: "What is the most common mistake students make when reading the volume of water in a glass measuring cylinder during Required Practical 5?",
+        formulaBox: "Avoiding parallax error",
+        options: [
+          "Reading from above or below eye level (parallax error) or reading the top edge of the curved meniscus instead of reading at eye level from the BOTTOM of the meniscus",
+          "Using a measuring cylinder marked in cm<sup>3</sup> instead of millilitres (1 cm<sup>3</sup> = 1 ml)",
+          "Placing the measuring cylinder on a flat bench",
+          "Waiting for air bubbles to rise before reading"
+        ],
+        correct: 0,
+        explanation: "Always position your eye level with the water surface and read the bottom of the concave meniscus."
+      },
+      {
+        id: "P3_Q17",
+        tiers: ["higher", "separate"],
+        isPractical: true,
+        subtopic: "Density & Required Practical 5",
+        stem: "An alloy is made by mixing 150 g of copper (density 9.0 g/cm<sup>3</sup>) with 50 g of tin (density 7.3 g/cm<sup>3</sup>) with no change in total volume. Calculate the density of the alloy to 2 significant figures.",
+        formulaBox: "V<sub>total</sub> = V<sub>1</sub> + V<sub>2</sub>  |  &rho;<sub>alloy</sub> = m<sub>total</sub> / V<sub>total</sub>",
+        options: [
+          "8.5 g/cm<sup>3</sup>",
+          "8.15 g/cm<sup>3</sup>",
+          "16.3 g/cm<sup>3</sup>",
+          "7.7 g/cm<sup>3</sup>"
+        ],
+        correct: 0,
+        explanation: "V<sub>copper</sub> = 150 &divide; 9.0 = 16.67 cm<sup>3</sup>; V<sub>tin</sub> = 50 &divide; 7.3 = 6.85 cm<sup>3</sup>. Total V = 23.52 cm<sup>3</sup>; total m = 200 g. &rho; = 200 &divide; 23.52 = 8.50 g/cm<sup>3</sup>."
+      },
+      {
+        id: "P3_Q18",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: true,
+        subtopic: "Density & Required Practical 5",
+        stem: "In Required Practical 5, how would you measure the volume of an irregular object that FLOATS on water (such as a cork)?",
+        formulaBox: "Adapting RP5 for low-density objects",
+        options: [
+          "Attach a heavy metal sinker of known volume (or measure the displaced volume of the sinker alone first, then measure the combined displaced volume of sinker + cork and subtract)",
+          "Leave it floating halfway out of the water and read the cylinder anyway",
+          "Weigh the cork in air and assume 1 g = 1 cm<sup>3</sup>",
+          "Heat the water until the cork sinks"
+        ],
+        correct: 0,
+        explanation: "Subtracting the sinker's displaced volume from the submerged sinker-plus-cork displaced volume isolates the cork's exact volume."
+      },
+
+      // ========================================================================
+      // 2. STATES OF MATTER & CHANGES OF STATE (12 Questions)
+      // ========================================================================
+      {
+        id: "P3_Q19",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "States of Matter & Changes of State",
+        stem: "Which description accurately describes the arrangement and motion of particles in a SOLID?",
+        formulaBox: "Particle model — Solid state",
+        options: [
+          "Particles are held in a fixed, regular lattice arrangement, touching each other closely, and vibrate about fixed positions",
+          "Particles are close together in a random arrangement and move freely around each other",
+          "Particles are far apart and move rapidly in random directions",
+          "Particles are completely stationary with zero kinetic energy even at room temperature"
+        ],
+        correct: 0,
+        explanation: "In solids, strong forces of attraction hold particles in fixed positions in a regular lattice, though they continuously vibrate."
+      },
+      {
+        id: "P3_Q20",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "States of Matter & Changes of State",
+        stem: "How does the particle arrangement and movement in a LIQUID differ from that in a solid and a gas?",
+        formulaBox: "Particle model — Liquid state",
+        options: [
+          "Particles are still close together (touching) like a solid, so liquids cannot be easily compressed, but they are arranged randomly and can slide/move past one another so liquids flow to take the shape of their container",
+          "Particles are widely spaced like a gas so liquids are easily compressed",
+          "Particles are locked in rigid rows so liquids keep a fixed shape",
+          "Particles only move in straight vertical lines"
+        ],
+        correct: 0,
+        explanation: "Because particles are still touching in a liquid, liquid density is close to solid density and liquids are virtually incompressible."
+      },
+      {
+        id: "P3_Q21",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "States of Matter & Changes of State",
+        stem: "Match the state changes to their correct names: (1) Solid directly to Gas, (2) Gas to Liquid, (3) Liquid to Solid.",
+        formulaBox: "Changes of state terminology",
+        options: [
+          "(1) Sublimation, (2) Condensing, (3) Freezing",
+          "(1) Evaporating, (2) Melting, (3) Condensing",
+          "(1) Sublimation, (2) Boiling, (3) Melting",
+          "(1) Condensing, (2) Sublimation, (3) Freezing"
+        ],
+        correct: 0,
+        explanation: "Solid &rarr; Gas directly (e.g. dry ice CO<sub>2</sub> or iodine) is sublimation; Gas &rarr; Liquid is condensing; Liquid &rarr; Solid is freezing."
+      },
+      {
+        id: "P3_Q22",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "States of Matter & Changes of State",
+        stem: "250 g of solid ice is placed in a sealed beaker and completely melted into liquid water. What is the mass of the liquid water formed, and why?",
+        formulaBox: "Conservation of mass in changes of state",
+        options: [
+          "250 g — changes of state are physical changes in which the number of particles does not change, so mass is conserved",
+          "Less than 250 g because melting destroys water molecules",
+          "More than 250 g because heat energy adds significant mass",
+          "0 g because liquids have no mass"
+        ],
+        correct: 0,
+        explanation: "AQA specification exact rule: Changes of state are physical changes which differ from chemical changes because the material recovers its original properties if the change is reversed, and mass is conserved."
+      },
+      {
+        id: "P3_Q23",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "States of Matter & Changes of State",
+        stem: "What is the key difference between BOILING and EVAPORATION?",
+        formulaBox: "Liquid &rarr; Gas phase transitions",
+        options: [
+          "Boiling occurs throughout the whole liquid at a single fixed temperature (the boiling point), whereas evaporation occurs only from the surface of a liquid and can happen at any temperature below the boiling point",
+          "Boiling happens at any temperature, whereas evaporation only happens at 100 &deg;C",
+          "Evaporation produces bubbles inside the liquid, whereas boiling only occurs at the surface",
+          "Boiling is a chemical change, whereas evaporation is a physical change"
+        ],
+        correct: 0,
+        explanation: "During evaporation, the fastest-moving particles near the liquid surface escape into the air, lowering the average kinetic energy (temperature) of the remaining liquid."
+      },
+      {
+        id: "P3_Q24",
+        tiers: ["higher", "separate"],
+        isPractical: false,
+        subtopic: "States of Matter & Changes of State",
+        stem: "State TWO limitations of the simple ball-and-stick / solid-sphere particle model used in GCSE Physics.",
+        formulaBox: "Evaluating the simple particle model (AQA Higher)",
+        options: [
+          "1. It represents particles as solid, inelastic spheres (ignoring that atoms are mostly empty space and can deform/polarise); 2. It does not show the forces of attraction between particles (or their actual sizes/distances to scale)",
+          "1. It shows too many subatomic quarks; 2. It only applies to radioactive elements",
+          "1. It proves that solids have no mass; 2. It shows gases as having fixed shapes",
+          "1. It cannot represent water; 2. It assumes particles never move"
+        ],
+        correct: 0,
+        explanation: "In the simple particle model, particles are drawn as hard, inelastic spheres with no representation of the strength of intermolecular forces between them."
+      },
+      {
+        id: "P3_Q25",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "States of Matter & Changes of State",
+        stem: "Why can a GAS be easily compressed inside a sealed syringe, whereas a solid or liquid cannot?",
+        formulaBox: "Compressibility of states of matter",
+        options: [
+          "In a gas, there are large empty spaces between the particles, so pushing the piston forces the particles closer together; in solids and liquids, particles are already touching with virtually no space between them",
+          "Gas particles themselves shrink when squashed",
+          "Solid particles repel each other with infinite magnetic force",
+          "Liquids contain no particles"
+        ],
+        correct: 0,
+        explanation: "Compressing a gas reduces the empty space between molecules; it does not squash the molecules themselves."
+      },
+      {
+        id: "P3_Q26",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "States of Matter & Changes of State",
+        stem: "How does a PHYSICAL change (such as melting wax or boiling water) differ from a CHEMICAL change (such as burning wood)?",
+        formulaBox: "Physical vs. Chemical changes",
+        options: [
+          "In a physical change, no new substances are formed and the material recovers its original properties if the change is reversed; in a chemical change, new substances are formed",
+          "Physical changes cannot be reversed, whereas chemical changes always reverse when cooled",
+          "Physical changes destroy atoms, whereas chemical changes conserve atoms",
+          "Only chemical changes involve energy transfer"
+        ],
+        correct: 0,
+        explanation: "AQA specification exact wording: Changes of state are physical changes which differ from chemical changes because the material recovers its original properties if the change is reversed."
+      },
+      {
+        id: "P3_Q27",
+        tiers: ["higher", "separate"],
+        isPractical: false,
+        subtopic: "States of Matter & Changes of State",
+        stem: "Explain why sweating cools down the human body in terms of particle kinetic energy.",
+        formulaBox: "Cooling by evaporation",
+        options: [
+          "The highest-energy (fastest-moving) water molecules escape from the skin surface into the air; this reduces the average kinetic energy of the remaining water molecules on the skin, lowering the temperature and drawing thermal energy from the skin",
+          "Sweat freezes into ice crystals on the skin",
+          "The slowest water molecules evaporate first, leaving hotter water behind",
+          "Sweat reflects all infrared radiation from the sun"
+        ],
+        correct: 0,
+        explanation: "Because temperature is proportional to the average kinetic energy of particles, the escape of the fastest molecules lowers average kinetic energy and cools the surface."
+      },
+      {
+        id: "P3_Q28",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "States of Matter & Changes of State",
+        stem: "Which state of matter has BOTH a fixed volume AND a fixed shape?",
+        formulaBox: "Macroscopic properties of states",
+        options: [
+          "Solid",
+          "Liquid",
+          "Gas",
+          "Plasma"
+        ],
+        correct: 0,
+        explanation: "Solids have fixed shape and fixed volume; liquids have fixed volume but variable shape; gases have neither fixed shape nor fixed volume."
+      },
+      {
+        id: "P3_Q29",
+        tiers: ["higher", "separate"],
+        isPractical: false,
+        subtopic: "States of Matter & Changes of State",
+        stem: "Substance X has a melting point of &minus;39 &deg;C and a boiling point of 357 &deg;C. What state of matter is Substance X in at room temperature (20 &deg;C)?",
+        formulaBox: "Predicting state from melting &amp; boiling points",
+        options: [
+          "Liquid (because 20 &deg;C is above its melting point of &minus;39 &deg;C, so it has already melted, and below its boiling point of 357 &deg;C)",
+          "Solid",
+          "Gas",
+          "Mixture of solid and gas"
+        ],
+        correct: 0,
+        explanation: "20 &deg;C lies between &minus;39 &deg;C and 357 &deg;C, so Substance X (mercury) is a liquid at room temperature."
+      },
+      {
+        id: "P3_Q30",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "States of Matter & Changes of State",
+        stem: "What happens to the forces of attraction between particles when a solid melts into a liquid and then boils into a gas?",
+        formulaBox: "Intermolecular forces across states",
+        options: [
+          "Energy is used to overcome the strong forces of attraction holding particles together; in a gas, the particles have overcome almost all intermolecular forces and move freely",
+          "Forces of attraction become stronger as the substance turns into a gas",
+          "Gravity between particles doubles when boiled",
+          "Forces of attraction only exist in gases"
+        ],
+        correct: 0,
+        explanation: "Strongest forces in solids &rarr; weaker forces allowing sliding in liquids &rarr; negligible forces in gases."
+      },
+
+      // ========================================================================
+      // 3. INTERNAL ENERGY & SPECIFIC HEAT CAPACITY (12 Questions)
+      // ========================================================================
+      {
+        id: "P3_Q31",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Internal Energy & Specific Heat Capacity",
+        stem: "What is the exact AQA definition of the INTERNAL ENERGY of a system?",
+        formulaBox: "Internal Energy = E<sub>kinetic</sub> + E<sub>potential</sub>",
+        options: [
+          "The total kinetic energy and potential energy of all the particles (atoms and molecules) that make up a system",
+          "Only the temperature of the object measured in degrees Celsius",
+          "The gravitational potential energy of the whole object above the floor",
+          "Only the kinetic energy of the single fastest molecule"
+        ],
+        correct: 0,
+        explanation: "AQA specification exact wording: Internal energy is the total kinetic energy and potential energy of all the particles (atoms and molecules) that make up a system."
+      },
+      {
+        id: "P3_Q32",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Internal Energy & Specific Heat Capacity",
+        stem: "When a substance is heated, what TWO possible effects can the increase in internal energy produce?",
+        formulaBox: "Heating &amp; Internal Energy",
+        options: [
+          "Either the temperature of the system increases (particles move faster, increasing kinetic energy) OR the system produces a change of state (increasing potential energy)",
+          "Either the mass of the substance doubles OR its density triples",
+          "Either the atoms split into protons OR they turn into light",
+          "Temperature and change of state always happen simultaneously at the exact same instant"
+        ],
+        correct: 0,
+        explanation: "AQA specification exact wording: Heating changes the energy stored within the system by increasing the energy of the particles that make up the system. This either raises the temperature of the system or produces a change of state."
+      },
+      {
+        id: "P3_Q33",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Internal Energy & Specific Heat Capacity",
+        stem: "What is the definition of the SPECIFIC HEAT CAPACITY (c) of a substance?",
+        formulaBox: "&Delta;E = m c &Delta;&theta;",
+        options: [
+          "The amount of energy required to raise the temperature of 1 kilogram of the substance by 1 degree Celsius (1 &deg;C or 1 K)",
+          "The amount of energy required to melt 1 kilogram of a solid without changing its temperature",
+          "The maximum temperature a substance can reach before catching fire",
+          "The total heat energy stored in 100 kg of water"
+        ],
+        correct: 0,
+        explanation: "AQA specification exact definition: The specific heat capacity of a substance is the amount of energy required to raise the temperature of one kilogram of the substance by one degree Celsius."
+      },
+      {
+        id: "P3_Q34",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: true,
+        subtopic: "Internal Energy & Specific Heat Capacity",
+        stem: "Calculate the thermal energy required to heat 2.5 kg of water (specific heat capacity = 4200 J/kg &deg;C) from 20 &deg;C to 80 &deg;C.",
+        formulaBox: "&Delta;E = m c &Delta;&theta;",
+        options: [
+          "630,000 J (630 kJ)",
+          "840,000 J",
+          "210,000 J",
+          "10,500 J"
+        ],
+        correct: 0,
+        explanation: "Temperature rise &Delta;&theta; = 80 &minus; 20 = 60 &deg;C. &Delta;E = 2.5 &times; 4200 &times; 60 = 630,000 J."
+      },
+      {
+        id: "P3_Q35",
+        tiers: ["higher", "separate"],
+        isPractical: true,
+        subtopic: "Internal Energy & Specific Heat Capacity",
+        stem: "A 400 g block of copper (specific heat capacity = 385 J/kg &deg;C) absorbs 4620 J of thermal energy. If its starting temperature was 22 &deg;C, what is its FINAL temperature?",
+        formulaBox: "&Delta;&theta; = &Delta;E / (m c)  |  1 kg = 1000 g",
+        options: [
+          "52 &deg;C",
+          "30 &deg;C",
+          "22.03 &deg;C",
+          "0.03 &deg;C"
+        ],
+        correct: 0,
+        explanation: "Convert mass: 400 g = 0.40 kg. Temperature rise &Delta;&theta; = 4620 &divide; (0.40 &times; 385) = 4620 &divide; 154 = 30 &deg;C. Final temperature = 22 + 30 = 52 &deg;C."
+      },
+      {
+        id: "P3_Q36",
+        tiers: ["higher", "separate"],
+        isPractical: true,
+        subtopic: "Internal Energy & Specific Heat Capacity",
+        stem: "A 1.5 kg metal cylinder cools from 95 &deg;C to 25 &deg;C, releasing 94.5 kJ of thermal energy to the surroundings. Calculate the specific heat capacity of the metal.",
+        formulaBox: "c = &Delta;E / (m &Delta;&theta;)  |  1 kJ = 1000 J",
+        options: [
+          "900 J/kg &deg;C",
+          "0.90 J/kg &deg;C",
+          "663 J/kg &deg;C",
+          "2520 J/kg &deg;C"
+        ],
+        correct: 0,
+        explanation: "&Delta;E = 94.5 kJ = 94,500 J; &Delta;&theta; = 95 &minus; 25 = 70 &deg;C. c = 94,500 &divide; (1.5 &times; 70) = 94,500 &divide; 105 = 900 J/kg &deg;C (aluminium)."
+      },
+      {
+        id: "P3_Q37",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Internal Energy & Specific Heat Capacity",
+        stem: "Water has a very high specific heat capacity (4200 J/kg &deg;C) compared to copper (385 J/kg &deg;C). Why does this make water ideal for use in domestic central heating radiators?",
+        formulaBox: "Practical application of high specific heat capacity",
+        options: [
+          "Water can absorb and store a large amount of thermal energy per kilogram for only a modest temperature rise, and releases a large amount of heat into rooms as it cools down",
+          "Water heats up to 1000 &deg;C in 1 second with almost no energy",
+          "Water never loses thermal energy to the room",
+          "Water has a lower density than air"
+        ],
+        correct: 0,
+        explanation: "Because &Delta;E = m c &Delta;&theta;, a large value of c means a large energy transfer &Delta;E for a given mass and temperature change."
+      },
+      {
+        id: "P3_Q38",
+        tiers: ["higher", "separate"],
+        isPractical: true,
+        subtopic: "Internal Energy & Specific Heat Capacity",
+        stem: "An immersion heater rated at 50 W is placed in a 1.0 kg aluminium block (c = 900 J/kg &deg;C) for 6.0 minutes. Assuming no heat loss, calculate the temperature rise of the block.",
+        formulaBox: "E = P t  and  &Delta;&theta; = E / (m c)",
+        options: [
+          "20 &deg;C",
+          "0.33 &deg;C",
+          "18 &deg;C",
+          "120 &deg;C"
+        ],
+        correct: 0,
+        explanation: "Time t = 6.0 &times; 60 = 360 s. Energy supplied E = 50 &times; 360 = 18,000 J. &Delta;&theta; = 18,000 &divide; (1.0 &times; 900) = 20 &deg;C."
+      },
+      {
+        id: "P3_Q39",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Internal Energy & Specific Heat Capacity",
+        stem: "Which of the following has MORE total internal energy: a full bath of warm water at 40 &deg;C, or a tiny red-hot spark from a sparkler at 1200 &deg;C?",
+        formulaBox: "Temperature (average KE) vs. Internal Energy (total particle energy)",
+        options: [
+          "The bath of warm water, because it contains vastly more water molecules, so the SUM of the kinetic and potential energies of all its particles is far greater than that of the tiny spark",
+          "The tiny spark, because temperature and internal energy are identical quantities",
+          "Both have the exact same internal energy",
+          "Neither has any internal energy"
+        ],
+        correct: 0,
+        explanation: "Temperature depends on the AVERAGE kinetic energy per particle, whereas internal energy is the TOTAL energy of ALL particles in the system."
+      },
+      {
+        id: "P3_Q40",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Internal Energy & Specific Heat Capacity",
+        stem: "What happens to the KINETIC ENERGY of the particles inside a block of iron as its temperature increases from 20 &deg;C to 200 &deg;C?",
+        formulaBox: "Temperature &amp; Particle Kinetic Energy",
+        options: [
+          "The particles vibrate faster with greater amplitude, so their average kinetic energy increases",
+          "The particles vibrate more slowly, so their kinetic energy decreases",
+          "The kinetic energy of the particles stays constant",
+          "The iron atoms break free and fly around the room as a gas"
+        ],
+        correct: 0,
+        explanation: "Raising temperature increases the kinetic energy store of the particles."
+      },
+      {
+        id: "P3_Q41",
+        tiers: ["higher", "separate"],
+        isPractical: true,
+        subtopic: "Internal Energy & Specific Heat Capacity",
+        stem: "In an experiment to measure the specific heat capacity of an aluminium block using an electrical heater, why is the experimental value of c almost always HIGHER than the true textbook value (900 J/kg &deg;C)?",
+        formulaBox: "c<sub>measured</sub> = E<sub>supplied</sub> / (m &Delta;&theta;)",
+        options: [
+          "Some thermal energy supplied by the heater is dissipated to the surroundings (air and bench) rather than heating the block, so &Delta;&theta; is smaller than ideal and E / (m&Delta;&theta;) calculates a larger value",
+          "The ammeter always reads half the true current",
+          "The aluminium block absorbs extra heat from the cold room",
+          "Mass increases as the block warms up"
+        ],
+        correct: 0,
+        explanation: "Because &Delta;&theta; is in the denominator of c = &Delta;E / (m &Delta;&theta;), heat loss reduces &Delta;&theta; and inflates the calculated specific heat capacity—wrapping the block in insulation reduces this error."
+      },
+      {
+        id: "P3_Q42",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Internal Energy & Specific Heat Capacity",
+        stem: "What is the standard SI unit of SPECIFIC HEAT CAPACITY?",
+        formulaBox: "c = &Delta;E / (m &Delta;&theta;)",
+        options: [
+          "J/kg &deg;C (joules per kilogram degree Celsius)",
+          "J/kg (joules per kilogram)",
+          "W/kg &deg;C (watts per kilogram degree Celsius)",
+          "kg/m<sup>3</sup>"
+        ],
+        correct: 0,
+        explanation: "Specific heat capacity has units of J/kg &deg;C (unlike specific latent heat, which has units of J/kg because &Delta;&theta; = 0)."
+      },
+
+      // ========================================================================
+      // 4. SPECIFIC LATENT HEAT & HEATING/COOLING CURVES (16 Questions)
+      // ========================================================================
+      {
+        id: "P3_Q43",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Specific Latent Heat & Heating/Cooling Curves",
+        stem: "What is the exact AQA definition of SPECIFIC LATENT HEAT (L)?",
+        formulaBox: "E = m L",
+        options: [
+          "The amount of energy required to change the state of 1 kilogram of a substance with NO change in temperature",
+          "The amount of energy required to raise the temperature of 1 kilogram of a substance by 1 &deg;C",
+          "The temperature at which a solid turns into a liquid",
+          "The energy released when 1 kilogram of fuel burns in oxygen"
+        ],
+        correct: 0,
+        explanation: "AQA specification exact wording: The specific latent heat of a substance is the amount of energy required to change the state of one kilogram of the substance with no change in temperature."
+      },
+      {
+        id: "P3_Q44",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Specific Latent Heat & Heating/Cooling Curves",
+        stem: "Distinguish between SPECIFIC LATENT HEAT OF FUSION (L<sub>f</sub>) and SPECIFIC LATENT HEAT OF VAPORISATION (L<sub>v</sub>).",
+        formulaBox: "Fusion vs. Vaporisation",
+        options: [
+          "Specific latent heat of FUSION applies to changing state between SOLID and LIQUID (melting/freezing); specific latent heat of VAPORISATION applies to changing state between LIQUID and GAS (boiling/condensing)",
+          "Fusion applies to liquid to gas; vaporisation applies to solid to liquid",
+          "Fusion applies only to nuclear reactions in the Sun",
+          "Both terms describe raising temperature by 100 &deg;C"
+        ],
+        correct: 0,
+        explanation: "AQA specification exact distinction: Specific latent heat of fusion — change of state from solid to liquid. Specific latent heat of vaporisation — change of state from liquid to vapour."
+      },
+      {
+        id: "P3_Q45",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: true,
+        subtopic: "Specific Latent Heat & Heating/Cooling Curves",
+        stem: "The specific latent heat of fusion of ice is 334,000 J/kg. Calculate the energy required to melt 0.45 kg of ice at 0 &deg;C into water at 0 &deg;C.",
+        formulaBox: "E = m L<sub>f</sub>",
+        options: [
+          "150,300 J (150.3 kJ)",
+          "742,222 J",
+          "150,300,000 J",
+          "334,000 J"
+        ],
+        correct: 0,
+        explanation: "E = m &times; L<sub>f</sub> = 0.45 &times; 334,000 = 150,300 J."
+      },
+      {
+        id: "P3_Q46",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: true,
+        subtopic: "Specific Latent Heat & Heating/Cooling Curves",
+        stem: "A kettle boils away 120 g of water at 100 &deg;C into steam at 100 &deg;C. If the specific latent heat of vaporisation of water is 2,260,000 J/kg, calculate the energy transferred to change its state.",
+        formulaBox: "E = m L<sub>v</sub>  |  1 kg = 1000 g",
+        options: [
+          "271,200 J (271.2 kJ)",
+          "271,200,000 J",
+          "18,833 J",
+          "2,260,000 J"
+        ],
+        correct: 0,
+        explanation: "Convert mass: 120 g = 0.12 kg. E = 0.12 &times; 2,260,000 = 271,200 J."
+      },
+      {
+        id: "P3_Q47",
+        tiers: ["higher", "separate"],
+        isPractical: true,
+        subtopic: "Specific Latent Heat & Heating/Cooling Curves",
+        stem: "An electrical heater supplies 85,000 J of thermal energy to melt 0.25 kg of a solid wax at its melting point. Calculate the specific latent heat of fusion of the wax.",
+        formulaBox: "L = E / m",
+        options: [
+          "340,000 J/kg",
+          "21,250 J/kg",
+          "340 J/kg",
+          "3,400,000 J/kg"
+        ],
+        correct: 0,
+        explanation: "L = E &divide; m = 85,000 &divide; 0.25 = 340,000 J/kg."
+      },
+      {
+        id: "P3_Q48",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Specific Latent Heat & Heating/Cooling Curves",
+        stem: "On a temperature–time heating graph for pure ice heated steadily from &minus;20 &deg;C to 120 &deg;C, why is the graph COMPLETELY FLAT (horizontal) at 0 &deg;C and at 100 &deg;C even though the heater is still supplying energy?",
+        formulaBox: "Flat plateaus on a heating curve",
+        options: [
+          "During a change of state, the energy supplied is used to overcome intermolecular forces and increase the POTENTIAL ENERGY of the particles rather than increasing their average KINETIC ENERGY, so the temperature remains constant",
+          "Because the heater temporarily switches itself off at 0 &deg;C and 100 &deg;C",
+          "Because thermometers cannot read temperatures above 0 &deg;C while ice is present",
+          "Because all the energy disappears into the air at 0 &deg;C"
+        ],
+        correct: 0,
+        explanation: "Key AQA exam principle: During a change of state, internal energy still increases because particle POTENTIAL energy increases, while average KINETIC energy (and temperature) remains constant."
+      },
+      {
+        id: "P3_Q49",
+        tiers: ["higher", "separate"],
+        isPractical: false,
+        subtopic: "Specific Latent Heat & Heating/Cooling Curves",
+        stem: "For water (and almost all substances), why is the specific latent heat of VAPORISATION (2,260,000 J/kg) much larger than the specific latent heat of FUSION (334,000 J/kg)?",
+        formulaBox: "L<sub>v</sub> &gg; L<sub>f</sub> particle explanation",
+        options: [
+          "Melting only weakens intermolecular forces slightly so particles can slide past each other while staying close together, whereas boiling requires completely overcoming ALL intermolecular forces to separate particles far apart into a gas (and doing work pushing back the atmosphere)",
+          "Steam is much heavier per kilogram than ice",
+          "Boiling happens at 100 &deg;C whereas melting happens at 0 &deg;C",
+          "Water molecules break apart into hydrogen and oxygen gas when boiled"
+        ],
+        correct: 0,
+        explanation: "Completely separating particles from a touching liquid into a widely spaced gas requires far more work against attractive forces than loosening a rigid solid lattice."
+      },
+      {
+        id: "P3_Q50",
+        tiers: ["higher", "separate"],
+        isPractical: true,
+        subtopic: "Specific Latent Heat & Heating/Cooling Curves",
+        stem: "Calculate the TOTAL energy needed to turn 0.50 kg of ice at 0 &deg;C into liquid water and then heat that water to 40 &deg;C. (L<sub>f</sub> = 334,000 J/kg; c<sub>water</sub> = 4200 J/kg &deg;C)",
+        formulaBox: "E<sub>total</sub> = m L<sub>f</sub> + m c &Delta;&theta;",
+        options: [
+          "251,000 J (251 kJ)",
+          "167,000 J",
+          "84,000 J",
+          "502,000 J"
+        ],
+        correct: 0,
+        explanation: "Stage 1 (melt ice at 0 &deg;C): E<sub>1</sub> = 0.50 &times; 334,000 = 167,000 J. Stage 2 (heat water 0 &rarr; 40 &deg;C): E<sub>2</sub> = 0.50 &times; 4200 &times; 40 = 84,000 J. Total E = 167,000 + 84,000 = 251,000 J."
+      },
+      {
+        id: "P3_Q51",
+        tiers: ["higher", "separate"],
+        isPractical: true,
+        subtopic: "Specific Latent Heat & Heating/Cooling Curves",
+        stem: "On a heating curve for a pure substance heated by a constant-power heater, the horizontal plateau for BOILING is 6 times longer in time than the horizontal plateau for MELTING. What does this tell you about L<sub>v</sub> compared to L<sub>f</sub>?",
+        formulaBox: "E = P t = m L",
+        options: [
+          "The specific latent heat of vaporisation (L<sub>v</sub>) is 6 times greater than the specific latent heat of fusion (L<sub>f</sub>)",
+          "The boiling point is 6 times higher than the melting point",
+          "The mass of the gas is 6 times larger than the mass of the solid",
+          "The specific heat capacity of the gas is 6 times larger"
+        ],
+        correct: 0,
+        explanation: "With constant power P and constant mass m, E = P t = m L, so L is directly proportional to the duration t of the flat plateau."
+      },
+      {
+        id: "P3_Q52",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Specific Latent Heat & Heating/Cooling Curves",
+        stem: "When steam at 100 &deg;C condenses into liquid water at 100 &deg;C on cold skin, what happens to the internal energy of the water and why does steam cause a much worse burn than boiling water at 100 &deg;C?",
+        formulaBox: "Energy released during condensation",
+        options: [
+          "As steam condenses, intermolecular bonds reform and the steam releases its large specific latent heat of vaporisation (2,260 kJ/kg) onto the skin BEFORE even cooling down from 100 &deg;C",
+          "Steam is at a temperature of 500 &deg;C",
+          "Steam absorbs latent heat from the skin, freezing the skin",
+          "Condensing increases the kinetic energy of the steam"
+        ],
+        correct: 0,
+        explanation: "Condensation is the reverse of boiling: it releases E = m L<sub>v</sub> of thermal energy at constant temperature."
+      },
+      {
+        id: "P3_Q53",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Specific Latent Heat & Heating/Cooling Curves",
+        stem: "Look at the cooling curve data for pure stearic acid cooling in a test tube. What is the MELTING / FREEZING POINT of stearic acid?",
+        formulaBox: "<table class='data-table'><tr><th>Time (min)</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><th>Temp (&deg;C)</th><td>82</td><td>74</td><td>69</td><td>69</td><td>69</td><td>62</td><td>55</td></tr></table>",
+        options: [
+          "69 &deg;C",
+          "82 &deg;C",
+          "55 &deg;C",
+          "74 &deg;C"
+        ],
+        correct: 0,
+        explanation: "The temperature stays constant at 69 &deg;C between 2 and 4 minutes while the liquid freezes into a solid—this flat section identifies the freezing/melting point."
+      },
+      {
+        id: "P3_Q54",
+        tiers: ["higher", "separate"],
+        isPractical: true,
+        subtopic: "Specific Latent Heat & Heating/Cooling Curves",
+        stem: "A 1.5 kW kettle boils water at 100 &deg;C. How long will it take to turn 0.30 kg of boiling water at 100 &deg;C completely into steam at 100 &deg;C? (L<sub>v</sub> = 2,260,000 J/kg)",
+        formulaBox: "E = m L<sub>v</sub>  and  t = E / P",
+        options: [
+          "452 s (7.5 minutes)",
+          "452,000 s",
+          "1507 s",
+          "0.45 s"
+        ],
+        correct: 0,
+        explanation: "Energy needed E = 0.30 &times; 2,260,000 = 678,000 J. Power P = 1.5 kW = 1500 W. Time t = 678,000 &divide; 1500 = 452 s."
+      },
+      {
+        id: "P3_Q55",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Specific Latent Heat & Heating/Cooling Curves",
+        stem: "What is the standard SI unit of SPECIFIC LATENT HEAT (L)?",
+        formulaBox: "L = E / m",
+        options: [
+          "J/kg (joules per kilogram)",
+          "J/kg &deg;C (joules per kilogram degree Celsius)",
+          "N/kg (newtons per kilogram)",
+          "W/m<sup>2</sup>"
+        ],
+        correct: 0,
+        explanation: "Because there is no temperature change during a change of state, L = E / m has units of J/kg."
+      },
+      {
+        id: "P3_Q56",
+        tiers: ["higher", "separate"],
+        isPractical: true,
+        subtopic: "Specific Latent Heat & Heating/Cooling Curves",
+        stem: "During the sloped (rising) sections of a heating curve—for example, heating liquid water from 20 &deg;C to 80 &deg;C—how do the KINETIC ENERGY and INTERNAL ENERGY of the water particles change?",
+        formulaBox: "Sloped section vs. Flat plateau",
+        options: [
+          "Both the average kinetic energy of the particles AND the total internal energy of the water increase",
+          "Average kinetic energy stays constant while potential energy increases",
+          "Internal energy stays constant while temperature rises",
+          "Both kinetic energy and internal energy decrease"
+        ],
+        correct: 0,
+        explanation: "On a sloped section, temperature rises &rArr; particles move faster &rArr; average kinetic energy increases &rArr; total internal energy increases."
+      },
+      {
+        id: "P3_Q57",
+        tiers: ["higher", "separate"],
+        isPractical: true,
+        subtopic: "Specific Latent Heat & Heating/Cooling Curves",
+        stem: "How much energy is released when 2.0 kg of molten lead at 327 &deg;C freezes completely into solid lead at 327 &deg;C? (Specific latent heat of fusion of lead = 23,000 J/kg)",
+        formulaBox: "E = m L<sub>f</sub>",
+        options: [
+          "46,000 J (46 kJ)",
+          "11,500 J",
+          "7,521,000 J",
+          "23,000 J"
+        ],
+        correct: 0,
+        explanation: "Freezing releases the exact same latent heat required to melt: E = 2.0 &times; 23,000 = 46,000 J."
+      },
+      {
+        id: "P3_Q58",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Specific Latent Heat & Heating/Cooling Curves",
+        stem: "Why is it called 'LATENT' heat?",
+        formulaBox: "Meaning of latent heat",
+        options: [
+          "Because 'latent' means hidden—the thermal energy goes into changing the state (potential energy) without producing any rise in temperature on a thermometer",
+          "Because the energy only appears at night",
+          "Because it can only be measured in outer space",
+          "Because it turns metals into gases at room temperature"
+        ],
+        correct: 0,
+        explanation: "Latent heat changes the internal potential energy store of the particles without raising temperature."
+      },
+
+      // ========================================================================
+      // 5. PARTICLE MOTION IN GASES & GAS LAWS (16 Questions)
+      // ========================================================================
+      {
+        id: "P3_Q59",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Particle Motion in Gases & Gas Laws",
+        stem: "How do the molecules of a GAS move, and how is the TEMPERATURE of a gas related to their motion?",
+        formulaBox: "Kinetic theory of gases",
+        options: [
+          "The molecules of a gas are in constant random motion; the temperature of the gas is related to the average kinetic energy of the molecules (higher temperature = higher average speed and kinetic energy)",
+          "Gas molecules vibrate in fixed rows; temperature is related to their size",
+          "Gas molecules all move at the exact same speed in a circle",
+          "Gas molecules stop moving completely at 0 &deg;C"
+        ],
+        correct: 0,
+        explanation: "AQA specification exact wording: The molecules of a gas are in constant random motion. The temperature of the gas is related to the average kinetic energy of the molecules."
+      },
+      {
+        id: "P3_Q60",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Particle Motion in Gases & Gas Laws",
+        stem: "Explain how a gas inside a sealed rigid container (such as an aerosol can) exerts a PRESSURE on the walls of the container.",
+        formulaBox: "Microscopic origin of gas pressure",
+        options: [
+          "Gas molecules move rapidly and randomly, colliding with the inside walls of the container; each collision exerts a small outward force at right angles to the wall, and the total force per unit area creates the gas pressure",
+          "Gas molecules sit still on the bottom of the can and push downwards under gravity only",
+          "Gas molecules repel the metal walls magnetically without ever touching them",
+          "Air outside the can sucks the walls inwards"
+        ],
+        correct: 0,
+        explanation: "AQA specification: Changing the temperature of a gas, held at constant volume, changes the pressure exerted by the gas (via collisions exerting force at right angles on the container walls)."
+      },
+      {
+        id: "P3_Q61",
+        tiers: ["higher", "separate"],
+        isPractical: false,
+        subtopic: "Particle Motion in Gases & Gas Laws",
+        stem: "A sealed rigid steel cylinder of gas is heated so its temperature increases while its volume stays CONSTANT. Explain, in terms of particles, why the pressure inside the cylinder increases.",
+        formulaBox: "Effect of temperature on gas pressure at constant volume",
+        options: [
+          "Heating increases the average kinetic energy and speed of the gas molecules; therefore they collide with the container walls MORE FREQUENTLY and with GREATER FORCE (harder) per collision, increasing the total outward force per unit area",
+          "Heating makes each gas molecule swell to twice its diameter",
+          "Heating creates millions of extra gas molecules inside the sealed cylinder",
+          "Heating decreases the speed of the molecules so they stick to the walls"
+        ],
+        correct: 0,
+        explanation: "Classic 3-mark AQA Higher explanation: Higher T &rarr; higher average KE/speed &rarr; (1) more frequent collisions with walls AND (2) harder collisions (greater force per collision) &rarr; greater pressure."
+      },
+      {
+        id: "P3_Q62",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Particle Motion in Gases & Gas Laws",
+        stem: "What is the standard SI unit of GAS PRESSURE (p)?",
+        formulaBox: "p = F / A",
+        options: [
+          "Pascal (Pa), which is equal to 1 N/m<sup>2</sup>",
+          "Newton (N)",
+          "Joule (J)",
+          "Kilogram per metre cubed (kg/m<sup>3</sup>)"
+        ],
+        correct: 0,
+        explanation: "Pressure p is measured in pascals (Pa), where 1 Pa = 1 N/m<sup>2</sup>."
+      },
+      {
+        id: "P3_Q63",
+        tiers: ["separate"],
+        isPractical: false,
+        subtopic: "Particle Motion in Gases & Gas Laws",
+        stem: "For a fixed mass of gas held at a CONSTANT TEMPERATURE, what is the relationship between its pressure (p) and its volume (V) (Boyle's Law)?",
+        formulaBox: "p V = constant  (AQA Separate Physics 8463)",
+        options: [
+          "Pressure is INVERSELY PROPORTIONAL to volume (p &times; V = constant), so halving the volume doubles the pressure",
+          "Pressure is directly proportional to volume (p / V = constant), so halving the volume halves the pressure",
+          "Pressure stays constant regardless of volume",
+          "Pressure equals volume squared"
+        ],
+        correct: 0,
+        explanation: "AQA 8463 exact specification: A gas can be compressed or expanded by pressure changes. The pressure produces a net force at right angles to the wall of the gas container. For a fixed mass of gas held at a constant temperature: p V = constant."
+      },
+      {
+        id: "P3_Q64",
+        tiers: ["separate"],
+        isPractical: true,
+        subtopic: "Particle Motion in Gases & Gas Laws",
+        stem: "A fixed mass of air in a syringe has a volume of 60 cm<sup>3</sup> at an atmospheric pressure of 100 kPa. The piston is slowly pushed in at constant temperature until the volume is 15 cm<sup>3</sup>. Calculate the new pressure of the air.",
+        formulaBox: "p<sub>1</sub> V<sub>1</sub> = p<sub>2</sub> V<sub>2</sub>",
+        options: [
+          "400 kPa",
+          "25 kPa",
+          "900 kPa",
+          "150 kPa"
+        ],
+        correct: 0,
+        explanation: "p<sub>1</sub> V<sub>1</sub> = p<sub>2</sub> V<sub>2</sub> &rArr; 100 &times; 60 = p<sub>2</sub> &times; 15 &rArr; 6000 = 15 p<sub>2</sub> &rArr; p<sub>2</sub> = 400 kPa (volume divided by 4, so pressure multiplied by 4)."
+      },
+      {
+        id: "P3_Q65",
+        tiers: ["separate"],
+        isPractical: true,
+        subtopic: "Particle Motion in Gases & Gas Laws",
+        stem: "A scuba diving cylinder contains 0.012 m<sup>3</sup> of compressed air at a pressure of 1.5 &times; 10<sup>7</sup> Pa. What volume would this air occupy at normal atmospheric pressure of 1.0 &times; 10<sup>5</sup> Pa at the same temperature?",
+        formulaBox: "V<sub>2</sub> = (p<sub>1</sub> V<sub>1</sub>) / p<sub>2</sub>",
+        options: [
+          "1.8 m<sup>3</sup>",
+          "0.000080 m<sup>3</sup>",
+          "18 m<sup>3</sup>",
+          "0.18 m<sup>3</sup>"
+        ],
+        correct: 0,
+        explanation: "V<sub>2</sub> = (1.5 &times; 10<sup>7</sup> &times; 0.012) &divide; (1.0 &times; 10<sup>5</sup>) = 180,000 &divide; 100,000 = 1.8 m<sup>3</sup>."
+      },
+      {
+        id: "P3_Q66",
+        tiers: ["separate"],
+        isPractical: false,
+        subtopic: "Particle Motion in Gases & Gas Laws",
+        stem: "Explain, in terms of particles, why compressing a fixed mass of gas into a SMALLER VOLUME at constant temperature increases its pressure.",
+        formulaBox: "Microscopic explanation of Boyle's Law (AQA 8463)",
+        options: [
+          "At constant temperature, the molecules move at the same average speed, but because the volume is smaller they have less distance to travel between walls and hit a smaller surface area, so collisions with the walls occur MORE FREQUENTLY (increasing force per unit area)",
+          "Compressing the gas at constant temperature makes the molecules move 10 times faster",
+          "Compressing the gas increases the mass of each molecule",
+          "The container walls shrink until they touch the molecules"
+        ],
+        correct: 0,
+        explanation: "Key distinction for AQA 8463: At CONSTANT temperature, average speed/KE per molecule does NOT change—pressure rises because collisions per second per unit wall area increase!"
+      },
+      {
+        id: "P3_Q67",
+        tiers: ["separate"],
+        isPractical: false,
+        subtopic: "Particle Motion in Gases & Gas Laws",
+        stem: "When you rapidly pump air into a bicycle tyre using a hand pump, the barrel of the pump becomes noticeably HOT. Explain why using AQA Physics principles.",
+        formulaBox: "Work done on a gas &rarr; Internal energy &amp; Temperature (AQA 8463)",
+        options: [
+          "Pushing the piston rapidly does mechanical WORK on the gas; this transfers energy to the gas, increasing its INTERNAL ENERGY (and average kinetic energy of the gas particles), which raises the temperature of the gas",
+          "The rubber tyre conducts cold air out of the pump",
+          "Compressing air turns nitrogen gas into liquid fuel",
+          "The pump has a hidden electrical heater inside the handle"
+        ],
+        correct: 0,
+        explanation: "AQA 8463 exact specification: Work is the transfer of energy by a force. Doing work on a gas increases the internal energy of the gas and can cause an increase in the temperature of the gas (e.g. bicycle pump)."
+      },
+      {
+        id: "P3_Q68",
+        tiers: ["separate"],
+        isPractical: false,
+        subtopic: "Particle Motion in Gases & Gas Laws",
+        stem: "What shape is the graph of Pressure (p) against Volume (V) for a fixed mass of gas at constant temperature, AND what shape is a graph of Pressure (p) against 1/V?",
+        formulaBox: "Graphical representation of p V = constant",
+        options: [
+          "p against V is a downward-sloping curve (hyperbola) that approaches neither axis; p against 1/V is a straight line passing through the origin",
+          "p against V is a straight line passing through the origin; p against 1/V is a flat horizontal line",
+          "Both graphs are U-shaped parabolas",
+          "p against V slopes upwards to the right"
+        ],
+        correct: 0,
+        explanation: "Because p &prop; 1/V, plotting p against V gives a reciprocal curve, whereas plotting p against 1/V gives a straight line through (0, 0)."
+      },
+      {
+        id: "P3_Q69",
+        tiers: ["separate"],
+        isPractical: false,
+        subtopic: "Particle Motion in Gases & Gas Laws",
+        stem: "A weather balloon rises high into the upper atmosphere where the external atmospheric pressure is much lower (assuming constant temperature). What happens to the volume of the balloon, and why?",
+        formulaBox: "Expanding gas under lower external pressure",
+        options: [
+          "The balloon EXPANDS (volume increases) until the internal gas pressure drops to match the lower external atmospheric pressure (since pV = constant)",
+          "The balloon shrinks to half its size",
+          "The balloon's volume stays identical at all altitudes",
+          "The helium inside turns into solid metal"
+        ],
+        correct: 0,
+        explanation: "A flexible balloon expands until the outward force of internal gas collisions balances the inward force of external atmospheric collisions."
+      },
+      {
+        id: "P3_Q70",
+        tiers: ["separate"],
+        isPractical: true,
+        subtopic: "Particle Motion in Gases & Gas Laws",
+        stem: "Look at the student's pressure–volume data for a trapped gas at constant temperature. Which value is missing for X?",
+        formulaBox: "<table class='data-table'><tr><th>Pressure p (kPa)</th><td>120</td><td>160</td><td>240</td></tr><tr><th>Volume V (cm<sup>3</sup>)</th><td>40</td><td>30</td><td>X</td></tr></table>",
+        options: [
+          "20 cm<sup>3</sup>",
+          "10 cm<sup>3</sup>",
+          "80 cm<sup>3</sup>",
+          "15 cm<sup>3</sup>"
+        ],
+        correct: 0,
+        explanation: "Check the constant p &times; V: 120 &times; 40 = 4800; 160 &times; 30 = 4800. Therefore 240 &times; X = 4800 &rArr; X = 4800 &divide; 240 = 20 cm<sup>3</sup>."
+      },
+      {
+        id: "P3_Q71",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Particle Motion in Gases & Gas Laws",
+        stem: "Why does an aerosol spray can carry a warning label: 'Pressurised container: do not expose to temperatures exceeding 50 &deg;C or throw into fire'?",
+        formulaBox: "Safety hazard of heating gas in a fixed-volume container",
+        options: [
+          "Because the volume of the steel can is fixed, heating increases the kinetic energy and speed of the gas particles, causing harder and more frequent collisions with the walls and a dangerous rise in pressure that could cause the can to explode",
+          "Because the steel can melts at 50 &deg;C",
+          "Because the gas inside turns into a solid block at 50 &deg;C",
+          "Because heating reduces the pressure inside to a vacuum"
+        ],
+        correct: 0,
+        explanation: "Constant volume + rising temperature = rapid pressure build-up until the container ruptures."
+      },
+      {
+        id: "P3_Q72",
+        tiers: ["foundation", "higher", "separate"],
+        isPractical: false,
+        subtopic: "Particle Motion in Gases & Gas Laws",
+        stem: "In what direction does the net force caused by gas pressure act on the inside surface of a container wall?",
+        formulaBox: "Direction of pressure force",
+        options: [
+          "At right angles (perpendicular / normal) to the surface of the wall",
+          "Parallel (sliding sideways) along the surface of the wall",
+          "Strictly vertically upwards only",
+          "Strictly vertically downwards only"
+        ],
+        correct: 0,
+        explanation: "AQA specification exact wording: The pressure produces a net force at right angles to the wall of the gas container."
+      },
+      {
+        id: "P3_Q73",
+        tiers: ["separate"],
+        isPractical: false,
+        subtopic: "Particle Motion in Gases & Gas Laws",
+        stem: "When high-pressure gas escapes rapidly out of a punctured tyre or CO<sub>2</sub> fire extinguisher, the valve and gas become icy cold. Why?",
+        formulaBox: "Work done BY an expanding gas",
+        options: [
+          "The expanding gas does work pushing back the surrounding atmosphere, transferring energy OUT of the gas's internal energy store, which lowers the average kinetic energy of the molecules and drops the temperature",
+          "CO<sub>2</sub> molecules are naturally at &minus;100 &deg;C inside the cylinder",
+          "Air friction heats the valve",
+          "Expansion creates new ice atoms"
+        ],
+        correct: 0,
+        explanation: "Doing work ON a gas increases internal energy and temperature; when a gas expands rapidly and does work ON its surroundings, its internal energy and temperature fall."
+      },
+      {
+        id: "P3_Q74",
+        tiers: ["higher", "separate"],
+        isPractical: false,
+        subtopic: "Particle Motion in Gases & Gas Laws",
+        stem: "Two identical sealed flasks at 25 &deg;C contain helium gas (light atoms) and oxygen gas (heavier molecules) at the same pressure. How does the AVERAGE KINETIC ENERGY of the helium atoms compare with that of the oxygen molecules?",
+        formulaBox: "Temperature &amp; Average Kinetic Energy",
+        options: [
+          "They have the EXACT SAME average kinetic energy because both gases are at the same temperature (25 &deg;C) — though the lighter helium atoms move faster on average",
+          "The oxygen molecules have 8 times higher average kinetic energy",
+          "The helium atoms have zero kinetic energy",
+          "Temperature has no connection to kinetic energy"
+        ],
+        correct: 0,
+        explanation: "Because temperature is proportional to the average kinetic energy of gas particles, two gases at the same temperature share the same average kinetic energy per particle."
+      }
+    ];
+
+    /* ==========================================================================
+       APPLICATION STATE
+       ========================================================================== */
+    const configState = {
+      studentName: "",
+      studentEmail: "",
+      tier: "higher",         // 'foundation' | 'higher' | 'separate'
+      focus: "all",           // 'all' | 'practicals'
+      questionCount: 20
+    };
+
+    const quizState = {
+      questions: [],
+      currentIndex: 0,
+      answers: [],            // { question, selectedIndex, isCorrect }
+      answeredCurrent: false,
+      isRetryMode: false
+    };
+
+    const TIER_META = {
+      foundation: { name: "Foundation Tier", badge: "Foundation Tier Selected" },
+      higher: { name: "Higher Tier", badge: "Higher Tier Selected" },
+      separate: { name: "Separate Physics", badge: "Separate Physics Selected" }
+    };
+
+    const FOCUS_META = {
+      all: "All Particle Model Topics",
+      practicals: "Required Practical 5 & Calculations Only"
+    };
+
+    /* ==========================================================================
+       CONFIGURATION SCREEN INTERACTIONS
+       ========================================================================== */
+    function getFilteredPool() {
+      return QUESTION_POOL.filter(q => {
+        const tierMatch = q.tiers.includes(configState.tier);
+        const focusMatch = configState.focus === "all" ? true : q.isPractical === true;
+        return tierMatch && focusMatch;
+      });
+    }
+
+    function updateConfigUI() {
+      ["foundation", "higher", "separate"].forEach(t => {
+        const card = document.getElementById(`tier-card-${t}`);
+        const isSel = configState.tier === t;
+        card.classList.toggle("selected", isSel);
+        card.setAttribute("aria-checked", isSel ? "true" : "false");
+      });
+      document.getElementById("selected-tier-badge").textContent = TIER_META[configState.tier].badge;
+
+      ["all", "practicals"].forEach(f => {
+        const card = document.getElementById(`focus-card-${f}`);
+        const chk = document.getElementById(`focus-check-${f}`);
+        const isSel = configState.focus === f;
+        card.classList.toggle("selected", isSel);
+        card.setAttribute("aria-checked", isSel ? "true" : "false");
+        chk.classList.toggle("hidden", !isSel);
+      });
+
+      document.querySelectorAll(".count-btn").forEach(btn => {
+        const val = Number(btn.getAttribute("data-count"));
+        btn.classList.toggle("active", val === configState.questionCount);
+      });
+
+      const pool = getFilteredPool();
+      const focusSuffix = configState.focus === "practicals" ? " (RP5 & Calculations)" : "";
+      document.getElementById("available-q-label").textContent =
+        `${pool.length} unique questions available for ${TIER_META[configState.tier].name}${focusSuffix}`;
+
+      const capBanner = document.getElementById("cap-feedback-banner");
+      const effectiveCount = Math.min(configState.questionCount, pool.length);
+
+      if (configState.questionCount > pool.length) {
+        capBanner.textContent =
+          `Note: ${TIER_META[configState.tier].name}${focusSuffix} has ${pool.length} unique questions in the bank, so your quiz will run all ${pool.length} available unique questions.`;
+        capBanner.classList.remove("hidden");
+      } else {
+        capBanner.classList.add("hidden");
+      }
+
+      document.getElementById("btn-start-quiz").innerHTML =
+        `Start ${TIER_META[configState.tier].name} Quiz (${effectiveCount} Questions) &rarr;`;
+    }
+
+    function selectTier(tierKey) {
+      configState.tier = tierKey;
+      updateConfigUI();
+    }
+
+    function selectFocus(focusKey) {
+      configState.focus = focusKey;
+      updateConfigUI();
+    }
+
+    function selectCount(num) {
+      configState.questionCount = num;
+      updateConfigUI();
+    }
+
+    function shuffleArray(arr) {
+      const copy = [...arr];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
+    /* Randomises option positions per question instance while tracking the correct answer */
+    function prepareQuestionInstance(qObj) {
+      const indexedOptions = qObj.options.map((text, idx) => ({
+        text,
+        isRight: idx === qObj.correct
+      }));
+      const shuffled = shuffleArray(indexedOptions);
+      return {
+        ...qObj,
+        options: shuffled.map(o => o.text),
+        correct: shuffled.findIndex(o => o.isRight)
+      };
+    }
+
+    function launchConfiguredQuiz() {
+      const nameInput = document.getElementById("student-name");
+      const errorMsg = document.getElementById("name-error-msg");
+      const rawName = nameInput.value.trim();
+
+      if (!rawName) {
+        nameInput.classList.remove("input-error");
+        void nameInput.offsetWidth;
+        nameInput.classList.add("input-error");
+        errorMsg.classList.remove("hidden");
+        nameInput.focus();
+        return;
+      }
+
+      nameInput.classList.remove("input-error");
+      errorMsg.classList.add("hidden");
+
+      configState.studentName = rawName;
+      configState.studentEmail = document.getElementById("student-email").value.trim();
+
+      const pool = shuffleArray(getFilteredPool());
+      const selectedQuestions = pool
+        .slice(0, Math.min(configState.questionCount, pool.length))
+        .map(prepareQuestionInstance);
+
+      quizState.questions = selectedQuestions;
+      quizState.currentIndex = 0;
+      quizState.answers = [];
+      quizState.answeredCurrent = false;
+      quizState.isRetryMode = false;
+
+      switchScreen("view-quiz");
+      document.getElementById("banner-main-title").textContent = "Topic 3: Particle Model of Matter";
+      document.getElementById("banner-main-sub").textContent =
+        `${TIER_META[configState.tier].name} • ${FOCUS_META[configState.focus]}`;
+
+      renderActiveQuestion();
+    }
+
+    function startRetryMissed() {
+      const missedQuestions = quizState.answers
+        .filter(item => !item.isCorrect)
+        .map(item => prepareQuestionInstance(item.question));
+
+      if (missedQuestions.length === 0) return;
+
+      quizState.questions = missedQuestions;
+      quizState.currentIndex = 0;
+      quizState.answers = [];
+      quizState.answeredCurrent = false;
+      quizState.isRetryMode = true;
+
+      switchScreen("view-quiz");
+      renderActiveQuestion();
+    }
+
+    function returnToConfig() {
+      switchScreen("view-config");
+      document.getElementById("banner-main-title").textContent = "Configure Your Particle Model of Matter Quiz";
+      document.getElementById("banner-main-sub").textContent =
+        "Enter your name, choose your tier, select either all Topic 3 content or Required Practical 5 & Calculations only, and pick your question count.";
+      updateConfigUI();
+    }
+
+    function switchScreen(activeId) {
+      ["view-config", "view-quiz", "view-report"].forEach(id => {
+        document.getElementById(id).classList.toggle("hidden", id !== activeId);
+      });
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    /* ==========================================================================
+       ACTIVE QUIZ RENDERING & LOGIC
+       ========================================================================== */
+    function renderActiveQuestion() {
+      const total = quizState.questions.length;
+      const idx = quizState.currentIndex;
+      const qObj = quizState.questions[idx];
+      quizState.answeredCurrent = false;
+
+      document.getElementById("hud-student-pill").textContent = configState.studentName;
+      document.getElementById("hud-tier-pill").textContent = TIER_META[configState.tier].name;
+      document.getElementById("hud-focus-pill").textContent = FOCUS_META[configState.focus];
+      document.getElementById("hud-retry-pill").classList.toggle("hidden", !quizState.isRetryMode);
+
+      const scoreSoFar = quizState.answers.filter(a => a.isCorrect).length;
+      document.getElementById("hud-live-score").textContent = `Score: ${scoreSoFar} / ${quizState.answers.length}`;
+      document.getElementById("hud-counter").textContent = `Question ${idx + 1} of ${total}`;
+
+      const pct = Math.round((idx / total) * 100);
+      document.getElementById("quiz-progress-fill").style.width = `${pct}%`;
+
+      const kickerEl = document.getElementById("q-kicker-label");
+      kickerEl.innerHTML = `<span>Question ${idx + 1} of ${total} &bull; ${qObj.subtopic}</span>` +
+        (qObj.isPractical ? `<span class="rp-badge">RP5 / CALCULATION</span>` : "");
+
+      document.getElementById("q-stem-text").innerHTML = qObj.stem;
+
+      const formulaBox = document.getElementById("q-formula-box");
+      if (qObj.formulaBox) {
+        formulaBox.innerHTML = qObj.formulaBox;
+        formulaBox.classList.remove("hidden");
+      } else {
+        formulaBox.classList.add("hidden");
+      }
+
+      const optionsContainer = document.getElementById("quiz-options-list");
+      optionsContainer.innerHTML = "";
+      const letters = ["A", "B", "C", "D"];
+
+      qObj.options.forEach((optText, optIdx) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "opt-btn";
+        btn.innerHTML = `
+          <span class="opt-letter">${letters[optIdx]}</span>
+          <span>${optText}</span>
+        `;
+        btn.addEventListener("click", () => submitOption(optIdx));
+        optionsContainer.appendChild(btn);
+      });
+
+      const fbPanel = document.getElementById("quiz-feedback-panel");
+      fbPanel.className = "feedback-panel hidden";
+
+      const nextBtn = document.getElementById("btn-next-question");
+      nextBtn.classList.add("hidden");
+      nextBtn.innerHTML = idx === total - 1 ? "View Diagnostic Report &rarr;" : "Next Question &rarr;";
+    }
+
+    function submitOption(selectedIdx) {
+      if (quizState.answeredCurrent) return;
+      quizState.answeredCurrent = true;
+
+      const qObj = quizState.questions[quizState.currentIndex];
+      const isCorrect = selectedIdx === qObj.correct;
+
+      quizState.answers.push({
+        question: qObj,
+        selectedIndex: selectedIdx,
+        isCorrect: isCorrect
+      });
+
+      const scoreSoFar = quizState.answers.filter(a => a.isCorrect).length;
+      document.getElementById("hud-live-score").textContent = `Score: ${scoreSoFar} / ${quizState.answers.length}`;
+
+      const total = quizState.questions.length;
+      const donePct = Math.round(((quizState.currentIndex + 1) / total) * 100);
+      document.getElementById("quiz-progress-fill").style.width = `${donePct}%`;
+
+      const optionBtns = document.querySelectorAll("#quiz-options-list .opt-btn");
+      optionBtns.forEach((btn, idx) => {
+        btn.disabled = true;
+        if (idx === qObj.correct) {
+          btn.classList.add("correct");
+        } else if (idx === selectedIdx && !isCorrect) {
+          btn.classList.add("incorrect");
+        } else {
+          btn.classList.add("dimmed");
+        }
+      });
+
+      const fbPanel = document.getElementById("quiz-feedback-panel");
+      const fbStatus = document.getElementById("fb-status-text");
+      const fbInsight = document.getElementById("fb-insight-text");
+
+      fbPanel.classList.remove("hidden", "fb-pass", "fb-fail");
+      if (isCorrect) {
+        fbPanel.classList.add("fb-pass");
+        fbStatus.textContent = "✓ Correct — Full Marks!";
+      } else {
+        fbPanel.classList.add("fb-fail");
+        const correctLetter = ["A", "B", "C", "D"][qObj.correct];
+        fbStatus.textContent = `✗ Incorrect — Correct Answer: Option ${correctLetter}`;
+      }
+      fbInsight.innerHTML = qObj.explanation;
+
+      document.getElementById("btn-next-question").classList.remove("hidden");
+    }
+
+    function advanceQuestion() {
+      if (quizState.currentIndex < quizState.questions.length - 1) {
+        quizState.currentIndex++;
+        renderActiveQuestion();
+      } else {
+        showDiagnosticReport();
+      }
+    }
+
+    /* ==========================================================================
+       DIAGNOSTIC RESULTS DASHBOARD
+       ========================================================================== */
+    function showDiagnosticReport() {
+      switchScreen("view-report");
+      document.getElementById("banner-main-title").textContent = "Topic 3 Diagnostic Performance Report";
+      document.getElementById("banner-main-sub").textContent =
+        `Completed by ${configState.studentName}${configState.studentEmail ? ` (${configState.studentEmail})` : ""} • ${TIER_META[configState.tier].name} • ${FOCUS_META[configState.focus]}`;
+
+      const total = quizState.answers.length;
+      const correct = quizState.answers.filter(a => a.isCorrect).length;
+      const missed = total - correct;
+      const pct = Math.round((correct / total) * 100);
+
+      document.getElementById("rep-student-header").textContent =
+        `${configState.studentName} • ${TIER_META[configState.tier].name} • ${FOCUS_META[configState.focus]}${quizState.isRetryMode ? " (Retry Round)" : ""}`;
+      document.getElementById("rep-pct-val").textContent = `${pct}%`;
+      document.getElementById("rep-frac-val").textContent = `(${correct} / ${total})`;
+      document.getElementById("rep-grade-pill").textContent = estimateAqaGrade(pct, configState.tier);
+
+      const msgEl = document.getElementById("rep-msg-text");
+      if (pct === 100) {
+        msgEl.textContent = `Outstanding work, ${configState.studentName}! You scored 100% across every question. Your AQA Topic 3 Particle Model of Matter knowledge and calculation skills are exam-ready.`;
+      } else if (pct >= 80) {
+        msgEl.textContent = `Strong performance, ${configState.studentName}! You have a solid command of the Particle Model of Matter. Click 'Retry Missed Questions' below to master the final ${missed} question${missed === 1 ? "" : "s"}.`;
+      } else if (pct >= 50) {
+        msgEl.textContent = `Good progress, ${configState.studentName}! Review the amber and red sub-topics below, study the AQA Examiner Insights, and retry your missed questions to push into the top grade boundaries.`;
+      } else {
+        msgEl.textContent = `Great active recall practice, ${configState.studentName}! Focus on the Priority Focus sub-topics in red below, read the tailored AQA revision guidance, and retry your missed questions.`;
+      }
+
+      const retryBtn = document.getElementById("btn-retry-missed");
+      if (missed > 0) {
+        retryBtn.classList.remove("hidden");
+        retryBtn.textContent = `Retry Missed Questions (${missed})`;
+      } else {
+        retryBtn.classList.add("hidden");
+      }
+
+      const topicMap = {};
+      quizState.answers.forEach(entry => {
+        const t = entry.question.subtopic;
+        if (!topicMap[t]) topicMap[t] = { correct: 0, total: 0 };
+        topicMap[t].total++;
+        if (entry.isCorrect) topicMap[t].correct++;
+      });
+
+      const masteryGrid = document.getElementById("rep-mastery-grid");
+      masteryGrid.innerHTML = "";
+
+      Object.keys(topicMap).forEach(topicName => {
+        const { correct: c, total: t } = topicMap[topicName];
+        const subPct = Math.round((c / t) * 100);
+
+        let chipClass = "sc-weak";
+        let fillClass = "fill-r";
+        let statusLabel = "Priority Focus";
+
+        if (subPct >= 80) {
+          chipClass = "sc-strong";
+          fillClass = "fill-g";
+          statusLabel = "Strong Area";
+        } else if (subPct >= 50) {
+          chipClass = "sc-dev";
+          fillClass = "fill-a";
+          statusLabel = "Developing";
+        }
+
+        const tip = subPct >= 80
+          ? "Secure understanding demonstrated—maintain with spaced active recall."
+          : (SUBTOPIC_GUIDANCE[topicName] || "Review examiner insights and retry missed questions in this sub-topic.");
+
+        const card = document.createElement("div");
+        card.className = "mastery-item";
+        card.innerHTML = `
+          <div class="mastery-item-top">
+            <span class="mastery-name">${topicName}</span>
+            <div class="mastery-right">
+              <span class="status-chip ${chipClass}">${statusLabel}</span>
+              <span style="font-size:0.84rem; font-weight:700; color:var(--slate-700);">${c}/${t} (${subPct}%)</span>
+            </div>
+          </div>
+          <div class="mastery-bar-track">
+            <div class="mastery-bar-fill ${fillClass}" style="width: ${subPct}%"></div>
+          </div>
+          <div class="mastery-tip">${tip}</div>
+        `;
+        masteryGrid.appendChild(card);
+      });
+
+      const reviewList = document.getElementById("rep-review-list");
+      reviewList.innerHTML = "";
+      reviewList.classList.add("hidden");
+      document.getElementById("btn-toggle-review").textContent = "Show Full Question-by-Question Review";
+
+      const letters = ["A", "B", "C", "D"];
+      quizState.answers.forEach((entry, idx) => {
+        const q = entry.question;
+        const userAns = `${letters[entry.selectedIndex]}. ${q.options[entry.selectedIndex]}`;
+        const rightAns = `${letters[q.correct]}. ${q.options[q.correct]}`;
+
+        const item = document.createElement("div");
+        item.className = `review-card ${entry.isCorrect ? "rc-ok" : "rc-bad"}`;
+        item.innerHTML = `
+          <div class="rc-kicker">Question ${idx + 1} &bull; ${q.subtopic} &bull; ${entry.isCorrect ? "Correct" : "Incorrect"}</div>
+          <div class="rc-q">${q.stem}</div>
+          <div class="rc-ans"><strong>Your Answer:</strong> <span style="color:${entry.isCorrect ? "var(--emerald-700)" : "var(--rose-600)"}; font-weight:600;">${userAns}</span></div>
+          ${!entry.isCorrect ? `<div class="rc-ans"><strong>Correct Answer:</strong> <span style="color:var(--emerald-700); font-weight:600;">${rightAns}</span></div>` : ""}
+          <div class="rc-exp"><strong>AQA Examiner Insight:</strong> ${q.explanation}</div>
+        `;
+        reviewList.appendChild(item);
+      });
+    }
+
+    function estimateAqaGrade(pct, tier) {
+      if (tier === "foundation") {
+        if (pct >= 80) return "Estimated AQA Indicator: Grade 4–5 (Maximum Foundation)";
+        if (pct >= 62) return "Estimated AQA Indicator: Grade 4 (Standard Pass)";
+        if (pct >= 45) return "Estimated AQA Indicator: Grade 3";
+        return "Estimated AQA Indicator: Grade 1–2 (Keep Practising)";
+      }
+      if (pct >= 80) return "Estimated AQA Indicator: Grade 8–9";
+      if (pct >= 65) return "Estimated AQA Indicator: Grade 6–7";
+      if (pct >= 48) return "Estimated AQA Indicator: Grade 4–5";
+      return "Estimated AQA Indicator: Grade 3 / Below (Target Revision)";
+    }
+
+    function toggleReviewSection() {
+      const list = document.getElementById("rep-review-list");
+      const btn = document.getElementById("btn-toggle-review");
+      const isHidden = list.classList.toggle("hidden");
+      btn.textContent = isHidden ? "Show Full Question-by-Question Review" : "Hide Full Question-by-Question Review";
+      if (!isHidden) {
+        list.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+
+    /* ==========================================================================
+       KEYBOARD SHORTCUTS & INITIALISATION
+       ========================================================================== */
+    document.getElementById("student-name").addEventListener("input", function () {
+      if (this.value.trim()) {
+        this.classList.remove("input-error");
+        document.getElementById("name-error-msg").classList.add("hidden");
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (document.getElementById("view-quiz").classList.contains("hidden")) return;
+      const key = e.key.toUpperCase();
+      if (!quizState.answeredCurrent) {
+        if (key === "1" || key === "A") submitOption(0);
+        else if (key === "2" || key === "B") submitOption(1);
+        else if (key === "3" || key === "C") submitOption(2);
+        else if (key === "4" || key === "D") submitOption(3);
+      } else if (e.key === "Enter") {
+        e.preventDefault();
+        advanceQuestion();
+      }
+    });
+
+    updateConfigUI();
+  </script>
+</body>
+</html>
